@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demoguard-deployment
+  labels:
+    app: demoguard
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: demoguard
+  template:
+    metadata:
+      labels:
+        app: demoguard
+    spec:
+      containers:
+      - name: demoguard
+        image: ddonahuex/demoguard:standard  # Replace with your actual image name/tag from the Docker build
+        imagePullPolicy: Always  # Or 'IfNotPresent' for local testing
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+          requests:
+            memory: "64Mi"
+            cpu: "250m"
