@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: demoguard
-        image: ddonahuex/demoguard:standard  # Replace with your actual image name/tag from the Docker build
+        image: ddonahuex/demoguard:chainguard  # Replace with your actual image name/tag from the Docker build
         imagePullPolicy: Always  # Or 'IfNotPresent' for local testing
         resources:
           limits:
