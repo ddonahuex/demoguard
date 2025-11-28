@@ -16,8 +16,8 @@ spec:
     spec:
       containers:
       - name: demoguard
-        image: ddonahuex/demoguard:standard  # Replace with your actual image name/tag from the Docker build
-        imagePullPolicy: Always  # Or 'IfNotPresent' for local testing
+        image: ddonahuex/demoguard:standard  # Image TAG: standard=CVEs, chainguard=0 CVEs
+        imagePullPolicy: Always
         resources:
           limits:
             memory: "128Mi"
