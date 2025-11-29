@@ -8,16 +8,12 @@ That said, learning new things like melange Dockerfile-less builds was enjoyable
 
 # Project Contents
 
-## Directories
-| Directory | Description |
+| Name | Description |
 | :--------- | :------- | 
-| deploy | Kubernetes manifests for all TC images |
+| deploy | Directory containing Kubernetes manifests for all TC images |
 | hello-melange-apko | Forked version of a Chainguard demo repository |
-| sbom | Build generated SBOMS for all TC images/artifacts |
-| scan | Build generated Grype scan results for all TC images |
-
-| File | Description |
-| :--------- | :------- | 
+| sbom | Directory containing build generated SBOMS for all TC images/artifacts |
+| scan | Directory containing build generated Grype scan results for all TC images |
 | cosign.pub | My public key used to sign all TC images |
 | Docker.single | Single-stage Dockerfile for building hello-melange-apko |
 | Docker.multi | Multi-stage Dockerfile for building hello-melange-apko |
