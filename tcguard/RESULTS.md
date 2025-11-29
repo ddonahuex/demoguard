@@ -96,9 +96,9 @@ Hello World!
 
 **ISSUE**: For whatever reason I could not resolve a DNS issue with packages.wolfi.sh, so I  used the official pre-built Wolfi package.
 
-```bash
+```
 docker pull cgr.dev/chainguard/hello-server:latest
-# → patched daily by the Wolfi team, 0 CVEs, signed
+```
 
 Built melange + Apko distroless image and pushed to GHCR and pulled to local registry
 ```

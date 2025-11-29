@@ -1,6 +1,11 @@
 # tcguard - Technical Challenge for Chainguard
 My take on the *Chainguard Solutions Engineer Technical Challenge*
 
+## Executive Summary
+This technical challenge was both challenging and fun. Part 1 of the challenge straightforward and inline with my experience. In Part 2 I was able to build a production grade Wolfi package, but I stalled at the apko build. The lesson for me is I need to spend time in Chainguard Academy in order to better understand the process. This is something I am willing to do.
+
+That said, learning new things like melange Dockerfile-less builds was enjoyable! I look forward to learning more about melange and apko builds.
+
 # Project Contents
 
 ## Directories
@@ -71,7 +76,6 @@ See referenced Dockerfiles for build details
 | multi-stage | Executes a Go build using Dockerfile.multi  | Multi-stage build of hello-melange-apko |
 | wolfi | Executes a Go build using Dockerfile.wolfi  | Wolfi-based build of hello-melange-apko |
 | melange | Builds a real production grade Wolfi package |
-
 | help | Print this help menu |
 
 ## Deployment
@@ -117,50 +121,3 @@ Hello World!
 # Part 1: Container Security Fundamentals
 
 # Part 2: Advanced Builds with Wolfi
-
-# Building the Project
-The demoguard project is built from the demoguard directory.
-
-This directory includes a Makefile that supports building a Go executable and
-creating and pushing a Docker image. The Makefile provides targets for building,
-running, and pushing the Docker image to ddonahuex's namespace on Docker Hub.
-
-In addition to building the Docker image, the build process generates an SBOM
-and Vulnerability Report using syft and grype respectively.
-
-For a complete list of build targets and their usage, refer to the *Build Targets* section below.
-
-
-## make
-The table below lists and describes the build targets and variables.
-
-To list build targets:
-> $ make help
-
-To build a target:
-> $ make \<target\>
-
-### Build Targets
-| Target | Description |
-| --------- | ------- |
-| single-stage | Builds the hello-melange-apko application using  |
-| clean | Executes a Go clean for all modules |
-| docker-build | Docker build, SBOM generation, & Vulnerability report for ddonahuex/demoguard Docker image |
-| docker-prod | Executes docker-build and docker-push make targets |
-| docker-push | Docker push for of ddonahuex/demoguard to the ddonahuex Docker Hub namespace |
-| help | Print this help menu |
-
-## Software Bill of Materials (SBOM) & Vulnerability Report
-The file demoguard-<build type>-bom.json is a CycloneDX-formatted SBOM generated using Syft 
-for the demoguard project.
-
-The file demoguard:<build type>-vuln-report.json is a vulnerability report generated
-using grype.
-
-# Run the Project
-Demoguard can be deployed on bare metal, in a Docker container, or within a
-Kubernetes cluster. Detailed instructions for each deployment method are
-provided in the subsections below.
-
-
-
