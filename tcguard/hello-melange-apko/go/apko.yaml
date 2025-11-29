@@ -1,0 +1,20 @@
+# Corrected apko.yaml (using Wolfi packages for a minimal image)
+contents:
+  # FIX: Switch to Wolfi repository for maximum security and minimal size
+  repositories:
+    - /work/hello-melange-apko/go/packages
+    - https://packages.wolfi.sh/os
+  packages:
+    - wolfi-base # Minimal base image (includes ca-certificates)
+    - hello-server # Your built package name
+  
+accounts:
+  groups:
+    - groupname: nonroot
+      gid: 65532
+  users:
+    - username: nonroot
+      uid: 65532
+  run-as: 65532
+entrypoint:
+  command: /usr/bin/hello-server

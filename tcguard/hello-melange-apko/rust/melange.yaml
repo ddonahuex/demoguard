@@ -1,0 +1,29 @@
+package:
+  name: hello-server
+  version: 0.1.0
+  description: friendly little webserver
+  target-architecture:
+    - all
+  copyright:
+    - license: Apache-2.0
+      paths:
+        - "*"
+
+environment:
+  contents:
+    repositories:
+      - https://dl-cdn.alpinelinux.org/alpine/edge/main
+      - https://dl-cdn.alpinelinux.org/alpine/edge/community
+    packages:
+      - alpine-baselayout-data
+      - ca-certificates-bundle
+      - busybox
+      - cargo
+
+pipeline:
+  - name: Build Rust application
+    runs: |
+      TARGETDIR="$(mktemp -d)"
+      cargo build --release --target-dir "${TARGETDIR}"
+      mkdir -p "${{targets.destdir}}/usr/bin"
+      mv "${TARGETDIR}/release/hello-server" "${{targets.destdir}}/usr/bin"

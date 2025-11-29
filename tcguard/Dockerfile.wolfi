@@ -1,0 +1,42 @@
+# Dockerfile.wolfi — Wolfi multi-stage (safer, smaller, faster)
+
+# --- Build Stage: Use Chainguard's Go Image for a safer build environment ---
+# The cgr.dev/chainguard/go image is based on Wolfi and contains a Go toolchain.
+FROM cgr.dev/chainguard/go:latest AS builder
+
+# Set the working directory
+WORKDIR /src
+
+# No need to install git/apk add, as the Go image should have the necessary tools for Go builds.
+
+# Copy only what Go needs
+COPY hello-melange-apko/go/go.mod hello-melange-apko/go/go.sum* ./
+COPY hello-melange-apko/go/main.go .
+
+# Resolve + download dependencies (using Go's default proxy for safety/caching)
+# Note: The original Dockerfile had `go env -w GOPROXY=direct` which is generally discouraged
+# unless you have a specific need to bypass proxies. We will omit it here.
+RUN go mod download
+
+# Build a fully static binary
+RUN CGO_ENABLED=0 GOOS=linux go build \
+    -ldflags="-s -w" \
+    -o /out/hello-melange-apko .
+
+# --- Final Stage: Use the minimal Wolfi-Base image for a minimal runtime ---
+# This is the most minimal, secure, and small base image from Chainguard/Wolfi.
+FROM cgr.dev/chainguard/wolfi-base:latest
+
+# Wolfi images already include ca-certificates in the base image, so no need for an extra install.
+# If your application required other runtime dependencies (like glibc/musl support), 
+# you would switch to a more specific Chainguard image, like cgr.dev/chainguard/static-base.
+
+WORKDIR /app
+# Copy the statically built binary from the builder stage
+COPY --from=builder /out/hello-melange-apko /app/hello-melange-apko
+
+# Expose the application port
+EXPOSE 8080
+
+# Define the command to run the application
+CMD ["/app/hello-melange-apko"]

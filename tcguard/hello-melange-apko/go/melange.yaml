@@ -1,0 +1,32 @@
+# Corrected melange.yaml (using the official structure + data field)
+package:
+  name: hello-server
+  version: 0.1.0
+  description: friendly little webserver
+  target-architecture:
+    - all
+  copyright:
+    - license: Apache-2.0
+      paths:
+        - "*"
+
+environment:
+  contents:
+    repositories:
+      - https://dl-cdn.alpinelinux.org/alpine/edge/main
+      - https://dl-cdn.alpinelinux.org/alpine/edge/community
+    packages:
+      - alpine-baselayout-data
+      - ca-certificates-bundle
+      - busybox
+      - go
+
+pipeline:
+  - name: Build Go application
+    # Changed 'runs' to 'uses: go/build' for proper built-in pipeline usage, 
+    # as defined in the Chainguard melange documentation for Go projects.
+    uses: go/build
+    with:
+      package: .
+      output: hello-server
+      ldflags: "-s -w"

@@ -1,0 +1,31 @@
+# Dockerfile.multi — Classic multi-stage (still vulnerable deps, but much smaller attack surface)
+FROM golang:1.23-alpine AS builder
+WORKDIR /src
+
+# Install git — this is the only thing missing in golang:alpine
+RUN apk add --no-cache git
+
+# Copy only what Go needs
+COPY hello-melange-apko/go/go.mod hello-melange-apko/go/go.sum* ./
+COPY hello-melange-apko/go/main.go .
+
+# Allow direct fetches and resolve + download deps (this is the "non-remediated" way)
+RUN go env -w GOPROXY=direct && \
+    go mod download
+
+# Build a fully static binary
+RUN CGO_ENABLED=0 GOOS=linux go build \
+    -ldflags="-s -w" \
+    -o /out/hello-melange-apko .
+
+# Final stage — tiny, but still uses upstream (vulnerable) gin
+FROM alpine:latest
+
+# Only runtime deps (ca-certificates if your app ever talks HTTPS)
+RUN apk add --no-cache ca-certificates
+
+WORKDIR /app
+COPY --from=builder /out/hello-melange-apko /app/
+
+EXPOSE 8080
+CMD ["/app/hello-melange-apko"]

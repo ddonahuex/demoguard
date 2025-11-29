@@ -1,0 +1,43 @@
+apiVersion: v1
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: singlestage
+  namespace: chainguard-demo
+  labels:
+    app: singlestage
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: singlestage
+  template:
+    metadata:
+      labels:
+        app: singlestage
+    spec:
+      containers:
+      - name: app
+        image: localhost:5000/hello-melange-apko:single-stage-latest   # or single-stage-latest
+        ports:
+        - containerPort: 8080
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 8080
+          initialDelaySeconds: 3
+          periodSeconds: 5
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: singlestage-svc
+  namespace: chainguard-demo
+spec:
+  type: NodePort
+  selector:
+    app: singlestage
+  ports:
+    - port: 8080
+      targetPort: 8080
+      nodePort: 30081

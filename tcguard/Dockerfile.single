@@ -1,0 +1,17 @@
+# Dockerfile.single — works when run from repo root
+FROM alpine:latest
+
+RUN apk add --no-cache go git ca-certificates
+
+WORKDIR /app
+
+# This is the only line you needed to change
+COPY hello-melange-apko/go/main.go hello-melange-apko/go/go.mod ./
+
+# Remedy for missing go.sum file
+RUN go env -w GOPROXY=direct && \
+    go mod tidy
+
+RUN go build -o hello-melange-apko .
+
+CMD ["./hello-melange-apko"]

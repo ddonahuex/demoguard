@@ -1,0 +1,166 @@
+# tcguard - Technical Challenge for Chainguard
+My take on the *Chainguard Solutions Engineer Technical Challenge*
+
+# Project Contents
+
+## Directories
+| Directory | Description |
+| :--------- | :------- | 
+| deploy | Kubernetes manifests for all TC images |
+| hello-melange-apko | Forked version of a Chainguard demo repository |
+| sbom | Build generated SBOMS for all TC images/artifacts |
+| scan | Build generated Grype scan results for all TC images |
+
+| File | Description |
+| :--------- | :------- | 
+| cosign.pub | My public key used to sign all TC images |
+| Docker.single | Single-stage Dockerfile for building hello-melange-apko |
+| Docker.multi | Multi-stage Dockerfile for building hello-melange-apko |
+| Docker.wolfi | Dockerfile for Wolfi-based hello-melange-apko |
+| Makfile | Top-level GNU makefile for all TC builds |
+| RESULTS.md | TC Results log |
+| sbom | SBOMS for all TC images/artifacts |
+| scan | Grype scan results for all TC images |
+
+# Environment Setup
+| Component | Description | Notes |
+| :--------- | :------- | :------- |
+| Container Engine | Docker 28.0.1 | [Install Instructions](https://docs.docker.com/engine/install/) |
+| Kubernetes Cluster | Minikube v1.35.0 | [Install Instructions](https://minikube.sigs.k8s.io/docs/start)  |
+| Linux OS | Ubuntu 20.04.6 LTS | [Install Instructions](https://ubuntu.com/tutorials/install-ubuntu-desktop) |
+| Local Registry | registry:2 on localhost:5000 | docker run -d -p 5000:5000 --restart=always --name local-registry registry:2 |
+| Build tools | make 4.2.1 | [GNU Documentation](https://www.gnu.org/s/make/manual/make.html) |
+| CVE Scanner | Grype 0.104.1 | [Chainguard Academy Tutorial](https://edu.chainguard.dev/chainguard/chainguard-images/staying-secure/working-with-scanners/grype-tutorial/) |
+| SBOM Generator | Syft 1.38.0 | [GitHub README](https://github.com/anchore/syft/blob/main/README.md) |
+| Grok | AI Paired Programming | grok.com |
+
+## Reasoning
+I chose the components for this environment due to my familiarity with them and because I have three instances running in my home lab. I have used this environment for several years to develop and deploy containerized workloads in software development and customer demo scenarios.
+
+Docker is the industry standard for running containerized workloads.
+
+Minikube is a great choice for dev and demo environments because it runs a real, single-node Kubernetes cluster locally using Docker. [Minikube addons](https://minikube.sigs.k8s.io/docs/handbook/addons/)  delivery prod quality K8s features like ingress controller, metrics server, container registry, etc.
+
+Ubuntu 20.04 and GNU Make are old and familiar "friends" for software development. They enable me to rapidly spin up and configure a development environment that works for me.
+
+I learned about *grype* and *syft* when researching Chainguard and have include them based on their value and ease of use in a CI/CD pipeline.
+
+I use Grok as a pair programmer on technical projects—treating its output as high-quality prototypes that I then refine, test, and reshape to match my own coding style and standards. This collaboration dramatically accelerates my workflow, letting me explore more approaches, catch blind spots early, and deliver polished, production-grade solutions faster than working solo (as in years past).
+
+# Building & Deploying Technical Challenge (TC) Artifacts
+All TC build targets are built from a single toplevel Makefile.
+
+The Go version of the Chainguard [hello-melange-apko](https://github.com/chainguard-dev/hello-melange-apko) application used in all the build targets.
+
+For a complete list of build targets and their usage, refer to the Make Targets section below.
+
+## make
+The table below lists and describes the build targets and variables.
+
+To list build targets:
+> $ make help
+
+To build a target:
+> $ make \<target\>
+
+### Build Targets
+See referenced Dockerfiles for build details
+| Target | Description | TC Notes |
+| :--------- | :------- | :------- |
+| single-stage | Executes a Go build using Dockerfile.single | Single stage build of hello-melange-apko |
+| multi-stage | Executes a Go build using Dockerfile.multi  | Multi-stage build of hello-melange-apko |
+| wolfi | Executes a Go build using Dockerfile.wolfi  | Wolfi-based build of hello-melange-apko |
+| melange | Builds a real production grade Wolfi package |
+
+| help | Print this help menu |
+
+## Deployment
+
+### minikube
+Minikube in this challenge is started using the **--driver=docker**, which means minikube will create a Docker container that hosts and acts as a single-node K8s cluster. This present a couple of issues that must be addressed if we are to deploy and verify the docker images created in this project.
+
+There are two noteworthy issues that need to be addressed to deploy in minikube using the local registry and accessing endpoints. They are both detailed below.
+
+#### Registry Addon Workaround
+As of this write the *registry* addon in minikube is not working. Normally I would store images in Dockerhub, to which this would not be relevant, but the tech challenge calls for using a local registry.
+
+The workaround to use a local registry is to load the image into minikube's containter runtime with the following command.
+
+Multi-stage example:
+```
+$ minikube image load localhost:5000/hello-melange-apko:multi-stage-latest
+```
+
+#### Accessing Service Endpoints
+The NodePorts services used to access endpoints inside minikube are, by default, not accessible via *localhost* on the host machine because they are running inside a Docker container. The container localhost and host machine localhost are not the same. 
+
+To access a service running in minikube, you need to take an additional step in order to curl to the hello-melange-apko endpoint. There are two options: **minikube service** command or **kubectl port-forward**.
+
+##### minikube service (Recommended)
+```
+ddonahue@kube-ai$ minikube service multistage-svc -n chainguard-demo --url
+http://192.168.49.2:30080
+
+ddonahue@kube-ai$ curl http://192.168.49.2:30080
+Hello World!
+```
+##### port-forward
+The following command must be executed in a seperate terminal and left running.
+```
+kubectl port-forward svc/multistage-svc -n chainguard-demo 8080:8080
+```
+Back in original terminal:
+```
+curl http://localhost:8080
+Hello World!
+```
+# Part 1: Container Security Fundamentals
+
+# Part 2: Advanced Builds with Wolfi
+
+# Building the Project
+The demoguard project is built from the demoguard directory.
+
+This directory includes a Makefile that supports building a Go executable and
+creating and pushing a Docker image. The Makefile provides targets for building,
+running, and pushing the Docker image to ddonahuex's namespace on Docker Hub.
+
+In addition to building the Docker image, the build process generates an SBOM
+and Vulnerability Report using syft and grype respectively.
+
+For a complete list of build targets and their usage, refer to the *Build Targets* section below.
+
+
+## make
+The table below lists and describes the build targets and variables.
+
+To list build targets:
+> $ make help
+
+To build a target:
+> $ make \<target\>
+
+### Build Targets
+| Target | Description |
+| --------- | ------- |
+| single-stage | Builds the hello-melange-apko application using  |
+| clean | Executes a Go clean for all modules |
+| docker-build | Docker build, SBOM generation, & Vulnerability report for ddonahuex/demoguard Docker image |
+| docker-prod | Executes docker-build and docker-push make targets |
+| docker-push | Docker push for of ddonahuex/demoguard to the ddonahuex Docker Hub namespace |
+| help | Print this help menu |
+
+## Software Bill of Materials (SBOM) & Vulnerability Report
+The file demoguard-<build type>-bom.json is a CycloneDX-formatted SBOM generated using Syft 
+for the demoguard project.
+
+The file demoguard:<build type>-vuln-report.json is a vulnerability report generated
+using grype.
+
+# Run the Project
+Demoguard can be deployed on bare metal, in a Docker container, or within a
+Kubernetes cluster. Detailed instructions for each deployment method are
+provided in the subsections below.
+
+
+

@@ -1,0 +1,6193 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:3a201dc0-900a-4b82-9a6d-62bf9a9c1a42",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2025-11-28T13:09:49-05:00",
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "author": "anchore",
+          "name": "syft",
+          "version": "1.38.0"
+        }
+      ]
+    },
+    "component": {
+      "bom-ref": "82f1e862bff8633a",
+      "type": "container",
+      "name": "localhost:5000/hello-melange-apko",
+      "version": "multi-stage-latest"
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "pkg:apk/alpine/alpine-baselayout@3.7.0-r0?arch=x86_64&distro=alpine-3.22.2&package-id=67451b98a3876cd6",
+      "type": "library",
+      "publisher": "Natanael Copa <ncopa@alpinelinux.org>",
+      "name": "alpine-baselayout",
+      "version": "3.7.0-r0",
+      "description": "Alpine base dir structure and init scripts",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:alpine-baselayout:alpine-baselayout:3.7.0-r0:*:*:*:*:*:*:*",
+      "purl": "pkg:apk/alpine/alpine-baselayout@3.7.0-r0?arch=x86_64&distro=alpine-3.22.2",
+      "externalReferences": [
+        {
+          "url": "https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "apk-db-cataloger"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "apk"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "apk-db-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:alpine-baselayout:alpine_baselayout:3.7.0-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:alpine_baselayout:alpine-baselayout:3.7.0-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:alpine_baselayout:alpine_baselayout:3.7.0-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:alpine:alpine-baselayout:3.7.0-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:alpine:alpine_baselayout:3.7.0-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:5d80999d28e9df8eead40c070eb29c3c0dd89104b03424c4fa6712707c76f74b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:metadata:gitCommitOfApkPort",
+          "value": "540d8477019887cc6534152e92c3b12676e35d7b"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "6441"
+        },
+        {
+          "name": "syft:metadata:originPackage",
+          "value": "alpine-baselayout"
+        },
+        {
+          "name": "syft:metadata:pullChecksum",
+          "value": "Q1KfmXSO6h/+AfcLNAJNxFxG0hH40="
+        },
+        {
+          "name": "syft:metadata:pullDependencies:0",
+          "value": "alpine-baselayout-data=3.7.0-r0"
+        },
+        {
+          "name": "syft:metadata:pullDependencies:1",
+          "value": "/bin/sh"
+        },
+        {
+          "name": "syft:metadata:size",
+          "value": "8237"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/alpine-baselayout-data@3.7.0-r0?arch=x86_64&distro=alpine-3.22.2&package-id=314a2c9763b46dff&upstream=alpine-baselayout",
+      "type": "library",
+      "publisher": "Natanael Copa <ncopa@alpinelinux.org>",
+      "name": "alpine-baselayout-data",
+      "version": "3.7.0-r0",
+      "description": "Alpine base dir structure and init scripts",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:alpine-baselayout-data:alpine-baselayout-data:3.7.0-r0:*:*:*:*:*:*:*",
+      "purl": "pkg:apk/alpine/alpine-baselayout-data@3.7.0-r0?arch=x86_64&distro=alpine-3.22.2&upstream=alpine-baselayout",
+      "externalReferences": [
+        {
+          "url": "https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "apk-db-cataloger"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "apk"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "apk-db-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:alpine-baselayout-data:alpine_baselayout_data:3.7.0-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:alpine_baselayout_data:alpine-baselayout-data:3.7.0-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:alpine_baselayout_data:alpine_baselayout_data:3.7.0-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:alpine-baselayout:alpine-baselayout-data:3.7.0-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:alpine-baselayout:alpine_baselayout_data:3.7.0-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:alpine_baselayout:alpine-baselayout-data:3.7.0-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:alpine_baselayout:alpine_baselayout_data:3.7.0-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:alpine:alpine-baselayout-data:3.7.0-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:alpine:alpine_baselayout_data:3.7.0-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:5d80999d28e9df8eead40c070eb29c3c0dd89104b03424c4fa6712707c76f74b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:metadata:gitCommitOfApkPort",
+          "value": "540d8477019887cc6534152e92c3b12676e35d7b"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "19034"
+        },
+        {
+          "name": "syft:metadata:originPackage",
+          "value": "alpine-baselayout"
+        },
+        {
+          "name": "syft:metadata:pullChecksum",
+          "value": "Q1c/XvZfgzOheEEC35c8B21afVtf4="
+        },
+        {
+          "name": "syft:metadata:size",
+          "value": "10788"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/alpine-keys@2.5-r0?arch=x86_64&distro=alpine-3.22.2&package-id=e6c0f0c8b82e215a",
+      "type": "library",
+      "publisher": "Natanael Copa <ncopa@alpinelinux.org>",
+      "name": "alpine-keys",
+      "version": "2.5-r0",
+      "description": "Public keys for Alpine Linux packages",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:alpine-keys:alpine-keys:2.5-r0:*:*:*:*:*:*:*",
+      "purl": "pkg:apk/alpine/alpine-keys@2.5-r0?arch=x86_64&distro=alpine-3.22.2",
+      "externalReferences": [
+        {
+          "url": "https://alpinelinux.org",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "apk-db-cataloger"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "apk"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "apk-db-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:alpine-keys:alpine_keys:2.5-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:alpine_keys:alpine-keys:2.5-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:alpine_keys:alpine_keys:2.5-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:alpine:alpine-keys:2.5-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:alpine:alpine_keys:2.5-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:5d80999d28e9df8eead40c070eb29c3c0dd89104b03424c4fa6712707c76f74b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:metadata:gitCommitOfApkPort",
+          "value": "6d473fb38effb2389f567b29fb7eb27039b3a279"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "14212"
+        },
+        {
+          "name": "syft:metadata:originPackage",
+          "value": "alpine-keys"
+        },
+        {
+          "name": "syft:metadata:pullChecksum",
+          "value": "Q1sXXkgUTrrQPWuhHUWyWq/C3jEME="
+        },
+        {
+          "name": "syft:metadata:size",
+          "value": "13390"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/alpine-release@3.22.2-r0?arch=x86_64&distro=alpine-3.22.2&package-id=2135bf12eb4f73a9&upstream=alpine-base",
+      "type": "library",
+      "publisher": "Natanael Copa <ncopa@alpinelinux.org>",
+      "name": "alpine-release",
+      "version": "3.22.2-r0",
+      "description": "Alpine release data",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:alpine-release:alpine-release:3.22.2-r0:*:*:*:*:*:*:*",
+      "purl": "pkg:apk/alpine/alpine-release@3.22.2-r0?arch=x86_64&distro=alpine-3.22.2&upstream=alpine-base",
+      "externalReferences": [
+        {
+          "url": "https://alpinelinux.org",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "apk-db-cataloger"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "apk"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "apk-db-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:alpine-release:alpine_release:3.22.2-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:alpine_release:alpine-release:3.22.2-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:alpine_release:alpine_release:3.22.2-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:alpine:alpine-release:3.22.2-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:alpine:alpine_release:3.22.2-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:5d80999d28e9df8eead40c070eb29c3c0dd89104b03424c4fa6712707c76f74b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:metadata:gitCommitOfApkPort",
+          "value": "7397bb5014e6c0ad0d68a40fff4bf6aae20aef7c"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "343"
+        },
+        {
+          "name": "syft:metadata:originPackage",
+          "value": "alpine-base"
+        },
+        {
+          "name": "syft:metadata:pullChecksum",
+          "value": "Q1GiFLjs5X/Az6ZaFXayTPMAFdOs0="
+        },
+        {
+          "name": "syft:metadata:pullDependencies:0",
+          "value": "alpine-keys"
+        },
+        {
+          "name": "syft:metadata:size",
+          "value": "2092"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/apk-tools@2.14.9-r3?arch=x86_64&distro=alpine-3.22.2&package-id=844d16c37f0dbc7e",
+      "type": "library",
+      "publisher": "Natanael Copa <ncopa@alpinelinux.org>",
+      "name": "apk-tools",
+      "version": "2.14.9-r3",
+      "description": "Alpine Package Keeper - package manager for alpine",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:apk-tools:apk-tools:2.14.9-r3:*:*:*:*:*:*:*",
+      "purl": "pkg:apk/alpine/apk-tools@2.14.9-r3?arch=x86_64&distro=alpine-3.22.2",
+      "externalReferences": [
+        {
+          "url": "https://gitlab.alpinelinux.org/alpine/apk-tools",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "apk-db-cataloger"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "apk"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "apk-db-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:apk-tools:apk_tools:2.14.9-r3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:apk_tools:apk-tools:2.14.9-r3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:apk_tools:apk_tools:2.14.9-r3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:apk:apk-tools:2.14.9-r3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:apk:apk_tools:2.14.9-r3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:5d80999d28e9df8eead40c070eb29c3c0dd89104b03424c4fa6712707c76f74b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:metadata:gitCommitOfApkPort",
+          "value": "a75f93ccd6e481eaf60f204061ac34bf04e3a598"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "69648"
+        },
+        {
+          "name": "syft:metadata:originPackage",
+          "value": "apk-tools"
+        },
+        {
+          "name": "syft:metadata:provides:0",
+          "value": "cmd:apk=2.14.9-r3"
+        },
+        {
+          "name": "syft:metadata:pullChecksum",
+          "value": "Q1mS9eObDUXzJsntLpsf5zeAnCPtk="
+        },
+        {
+          "name": "syft:metadata:pullDependencies:0",
+          "value": "musl>=1.2.3_git20230424"
+        },
+        {
+          "name": "syft:metadata:pullDependencies:1",
+          "value": "libcrypto3>=3.5"
+        },
+        {
+          "name": "syft:metadata:pullDependencies:2",
+          "value": "ca-certificates-bundle"
+        },
+        {
+          "name": "syft:metadata:pullDependencies:3",
+          "value": "so:libapk.so.2.14.9"
+        },
+        {
+          "name": "syft:metadata:pullDependencies:4",
+          "value": "so:libc.musl-x86_64.so.1"
+        },
+        {
+          "name": "syft:metadata:pullDependencies:5",
+          "value": "so:libcrypto.so.3"
+        },
+        {
+          "name": "syft:metadata:pullDependencies:6",
+          "value": "so:libz.so.1"
+        },
+        {
+          "name": "syft:metadata:size",
+          "value": "34575"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/busybox@1.37.0-r19?arch=x86_64&distro=alpine-3.22.2&package-id=d62ad83b542a9e44",
+      "type": "library",
+      "publisher": "Sören Tempel <soeren+alpine@soeren-tempel.net>",
+      "name": "busybox",
+      "version": "1.37.0-r19",
+      "description": "Size optimized toolbox of many common UNIX utilities",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:busybox:busybox:1.37.0-r19:*:*:*:*:*:*:*",
+      "purl": "pkg:apk/alpine/busybox@1.37.0-r19?arch=x86_64&distro=alpine-3.22.2",
+      "externalReferences": [
+        {
+          "url": "https://busybox.net/",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "apk-db-cataloger"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "apk"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "apk-db-entry"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:5d80999d28e9df8eead40c070eb29c3c0dd89104b03424c4fa6712707c76f74b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:metadata:gitCommitOfApkPort",
+          "value": "bd8ab811155a6087ba7480103d89e2500e3cb0eb"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "817380"
+        },
+        {
+          "name": "syft:metadata:originPackage",
+          "value": "busybox"
+        },
+        {
+          "name": "syft:metadata:provides:0",
+          "value": "cmd:busybox=1.37.0-r19"
+        },
+        {
+          "name": "syft:metadata:pullChecksum",
+          "value": "Q1sQIqTBTpAlcB+60Qtm+Ls7mNuuo="
+        },
+        {
+          "name": "syft:metadata:pullDependencies:0",
+          "value": "so:libc.musl-x86_64.so.1"
+        },
+        {
+          "name": "syft:metadata:size",
+          "value": "505973"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/busybox-binsh@1.37.0-r19?arch=x86_64&distro=alpine-3.22.2&package-id=73301e3aea81a8df&upstream=busybox",
+      "type": "library",
+      "publisher": "Sören Tempel <soeren+alpine@soeren-tempel.net>",
+      "name": "busybox-binsh",
+      "version": "1.37.0-r19",
+      "description": "busybox ash /bin/sh",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:busybox-binsh:busybox-binsh:1.37.0-r19:*:*:*:*:*:*:*",
+      "purl": "pkg:apk/alpine/busybox-binsh@1.37.0-r19?arch=x86_64&distro=alpine-3.22.2&upstream=busybox",
+      "externalReferences": [
+        {
+          "url": "https://busybox.net/",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "apk-db-cataloger"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "apk"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "apk-db-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:busybox-binsh:busybox_binsh:1.37.0-r19:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:busybox_binsh:busybox-binsh:1.37.0-r19:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:busybox_binsh:busybox_binsh:1.37.0-r19:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:busybox:busybox-binsh:1.37.0-r19:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:busybox:busybox_binsh:1.37.0-r19:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:5d80999d28e9df8eead40c070eb29c3c0dd89104b03424c4fa6712707c76f74b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:metadata:gitCommitOfApkPort",
+          "value": "bd8ab811155a6087ba7480103d89e2500e3cb0eb"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "1"
+        },
+        {
+          "name": "syft:metadata:originPackage",
+          "value": "busybox"
+        },
+        {
+          "name": "syft:metadata:provides:0",
+          "value": "/bin/sh"
+        },
+        {
+          "name": "syft:metadata:provides:1",
+          "value": "cmd:sh=1.37.0-r19"
+        },
+        {
+          "name": "syft:metadata:pullChecksum",
+          "value": "Q11YDM9xCuCDMy3164gTc1+qB22H4="
+        },
+        {
+          "name": "syft:metadata:pullDependencies:0",
+          "value": "busybox=1.37.0-r19"
+        },
+        {
+          "name": "syft:metadata:size",
+          "value": "1567"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/ca-certificates@20250911-r0?arch=x86_64&distro=alpine-3.22.2&package-id=11ba9a777b6e6404",
+      "type": "library",
+      "publisher": "Natanael Copa <ncopa@alpinelinux.org>",
+      "name": "ca-certificates",
+      "version": "20250911-r0",
+      "description": "Common CA certificates PEM files from Mozilla",
+      "licenses": [
+        {
+          "expression": "MPL-2.0 AND MIT"
+        }
+      ],
+      "cpe": "cpe:2.3:a:ca-certificates:ca-certificates:20250911-r0:*:*:*:*:*:*:*",
+      "purl": "pkg:apk/alpine/ca-certificates@20250911-r0?arch=x86_64&distro=alpine-3.22.2",
+      "externalReferences": [
+        {
+          "url": "https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "apk-db-cataloger"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "apk"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "apk-db-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:ca-certificates:ca_certificates:20250911-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:ca_certificates:ca-certificates:20250911-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:ca_certificates:ca_certificates:20250911-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:mozilla:ca-certificates:20250911-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:mozilla:ca_certificates:20250911-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:ca:ca-certificates:20250911-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:ca:ca_certificates:20250911-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:5d80999d28e9df8eead40c070eb29c3c0dd89104b03424c4fa6712707c76f74b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:metadata:gitCommitOfApkPort",
+          "value": "f626b79f972258e59cbb84ba261ae34cec8637be"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "253973"
+        },
+        {
+          "name": "syft:metadata:originPackage",
+          "value": "ca-certificates"
+        },
+        {
+          "name": "syft:metadata:provides:0",
+          "value": "cmd:c_rehash=20250911-r0"
+        },
+        {
+          "name": "syft:metadata:provides:1",
+          "value": "cmd:update-ca-certificates=20250911-r0"
+        },
+        {
+          "name": "syft:metadata:pullChecksum",
+          "value": "Q1BJBcjtDeI5JufxUXkfsXUD5uvxY="
+        },
+        {
+          "name": "syft:metadata:pullDependencies:0",
+          "value": "/bin/sh"
+        },
+        {
+          "name": "syft:metadata:pullDependencies:1",
+          "value": "so:libc.musl-x86_64.so.1"
+        },
+        {
+          "name": "syft:metadata:pullDependencies:2",
+          "value": "so:libcrypto.so.3"
+        },
+        {
+          "name": "syft:metadata:size",
+          "value": "154551"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/ca-certificates-bundle@20250911-r0?arch=x86_64&distro=alpine-3.22.2&package-id=3b472b2b46e8c22f&upstream=ca-certificates",
+      "type": "library",
+      "publisher": "Natanael Copa <ncopa@alpinelinux.org>",
+      "name": "ca-certificates-bundle",
+      "version": "20250911-r0",
+      "description": "Pre generated bundle of Mozilla certificates",
+      "licenses": [
+        {
+          "expression": "MPL-2.0 AND MIT"
+        }
+      ],
+      "cpe": "cpe:2.3:a:ca-certificates-bundle:ca-certificates-bundle:20250911-r0:*:*:*:*:*:*:*",
+      "purl": "pkg:apk/alpine/ca-certificates-bundle@20250911-r0?arch=x86_64&distro=alpine-3.22.2&upstream=ca-certificates",
+      "externalReferences": [
+        {
+          "url": "https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "apk-db-cataloger"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "apk"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "apk-db-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:ca-certificates-bundle:ca_certificates_bundle:20250911-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:ca_certificates_bundle:ca-certificates-bundle:20250911-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:ca_certificates_bundle:ca_certificates_bundle:20250911-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:ca-certificates:ca-certificates-bundle:20250911-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:ca-certificates:ca_certificates_bundle:20250911-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:ca_certificates:ca-certificates-bundle:20250911-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:ca_certificates:ca_certificates_bundle:20250911-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:mozilla:ca-certificates-bundle:20250911-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:mozilla:ca_certificates_bundle:20250911-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:ca:ca-certificates-bundle:20250911-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:ca:ca_certificates_bundle:20250911-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:5d80999d28e9df8eead40c070eb29c3c0dd89104b03424c4fa6712707c76f74b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:metadata:gitCommitOfApkPort",
+          "value": "f626b79f972258e59cbb84ba261ae34cec8637be"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "219404"
+        },
+        {
+          "name": "syft:metadata:originPackage",
+          "value": "ca-certificates"
+        },
+        {
+          "name": "syft:metadata:provides:0",
+          "value": "ca-certificates-cacert=20250911-r0"
+        },
+        {
+          "name": "syft:metadata:pullChecksum",
+          "value": "Q1jH7paEGfzZLVNCzeDFVAppWkrC0="
+        },
+        {
+          "name": "syft:metadata:size",
+          "value": "129568"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/gin-contrib/sse@v0.1.0?package-id=a237d10d84ba9779",
+      "type": "library",
+      "name": "github.com/gin-contrib/sse",
+      "version": "v0.1.0",
+      "cpe": "cpe:2.3:a:gin-contrib:sse:v0.1.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/gin-contrib/sse@v0.1.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "go-module-buildinfo-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:gin_contrib:sse:v0.1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:gin:sse:v0.1.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:fc5ee1f2a20b3f8ba1504b2c550011ee21c45d0a338c7a5933a133a21ed62f7f"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/hello-melange-apko"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.23.12"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:Y/yl/+YNO8GZSjAhjMsSuLt29uWRFHdHYUb5lYOV9qE="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "hello-server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/gin-gonic/gin@v1.8.1?package-id=62fdcc50fb246d99",
+      "type": "library",
+      "name": "github.com/gin-gonic/gin",
+      "version": "v1.8.1",
+      "cpe": "cpe:2.3:a:gin-gonic:gin:v1.8.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/gin-gonic/gin@v1.8.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "go-module-buildinfo-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:gin_gonic:gin:v1.8.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:gin:gin:v1.8.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:fc5ee1f2a20b3f8ba1504b2c550011ee21c45d0a338c7a5933a133a21ed62f7f"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/hello-melange-apko"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.23.12"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:4+fr/el88TOO3ewCmQr8cx/CtZ/umlIRIs5M4NTNjf8="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "hello-server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/go-playground/locales@v0.14.0?package-id=82fdff73dc1e6a5b",
+      "type": "library",
+      "name": "github.com/go-playground/locales",
+      "version": "v0.14.0",
+      "cpe": "cpe:2.3:a:go-playground:locales:v0.14.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/go-playground/locales@v0.14.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "go-module-buildinfo-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go_playground:locales:v0.14.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go:locales:v0.14.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:fc5ee1f2a20b3f8ba1504b2c550011ee21c45d0a338c7a5933a133a21ed62f7f"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/hello-melange-apko"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.23.12"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:u50s323jtVGugKlcYeyzC0etD1HifMjqmJqb8WugfUU="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "hello-server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/go-playground/universal-translator@v0.18.0?package-id=1209d1cb027b5e6a",
+      "type": "library",
+      "name": "github.com/go-playground/universal-translator",
+      "version": "v0.18.0",
+      "cpe": "cpe:2.3:a:go-playground:universal-translator:v0.18.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/go-playground/universal-translator@v0.18.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "go-module-buildinfo-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go-playground:universal_translator:v0.18.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go_playground:universal-translator:v0.18.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go_playground:universal_translator:v0.18.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go:universal-translator:v0.18.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go:universal_translator:v0.18.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:fc5ee1f2a20b3f8ba1504b2c550011ee21c45d0a338c7a5933a133a21ed62f7f"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/hello-melange-apko"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.23.12"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:82dyy6p4OuJq4/CByFNOn/jYrnRPArHwAcmLoJZxyho="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "hello-server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/go-playground/validator@v10.10.0?package-id=a42460a72cb8af76#v10",
+      "type": "library",
+      "name": "github.com/go-playground/validator/v10",
+      "version": "v10.10.0",
+      "cpe": "cpe:2.3:a:go-playground:validator\\/v10:v10.10.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/go-playground/validator@v10.10.0#v10",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "go-module-buildinfo-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go_playground:validator\\/v10:v10.10.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:go:validator\\/v10:v10.10.0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:fc5ee1f2a20b3f8ba1504b2c550011ee21c45d0a338c7a5933a133a21ed62f7f"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/hello-melange-apko"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.23.12"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:I7mrTYv78z8k8VXa/qJlOlEXn/nBh+BF8dHX5nt/dr0="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "hello-server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/leodido/go-urn@v1.2.1?package-id=b17229fa934ca05d",
+      "type": "library",
+      "name": "github.com/leodido/go-urn",
+      "version": "v1.2.1",
+      "cpe": "cpe:2.3:a:leodido:go-urn:v1.2.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/leodido/go-urn@v1.2.1",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "go-module-buildinfo-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:leodido:go_urn:v1.2.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:fc5ee1f2a20b3f8ba1504b2c550011ee21c45d0a338c7a5933a133a21ed62f7f"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/hello-melange-apko"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.23.12"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:BqpAaACuzVSgi/VLzGZIobT2z4v53pjosyNd9Yv6n/w="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "hello-server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/mattn/go-isatty@v0.0.14?package-id=00798b1b0e777356",
+      "type": "library",
+      "name": "github.com/mattn/go-isatty",
+      "version": "v0.0.14",
+      "cpe": "cpe:2.3:a:mattn:go-isatty:v0.0.14:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/mattn/go-isatty@v0.0.14",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "go-module-buildinfo-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:mattn:go_isatty:v0.0.14:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:fc5ee1f2a20b3f8ba1504b2c550011ee21c45d0a338c7a5933a133a21ed62f7f"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/hello-melange-apko"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.23.12"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:yVuAays6BHfxijgZPzw+3Zlu5yQgKGP2/hcQbHb7S9Y="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "hello-server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/pelletier/go-toml@v2.0.1?package-id=446ab18cb7617254#v2",
+      "type": "library",
+      "name": "github.com/pelletier/go-toml/v2",
+      "version": "v2.0.1",
+      "cpe": "cpe:2.3:a:pelletier:go-toml\\/v2:v2.0.1:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/pelletier/go-toml@v2.0.1#v2",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "go-module-buildinfo-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:pelletier:go_toml\\/v2:v2.0.1:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:fc5ee1f2a20b3f8ba1504b2c550011ee21c45d0a338c7a5933a133a21ed62f7f"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/hello-melange-apko"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.23.12"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:8e3L2cCQzLFi2CR4g7vGFuFxX7Jl1kKX8gW+iV0GUKU="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "hello-server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/github.com/ugorji/go@v1.2.7?package-id=1e607c7062294e30#codec",
+      "type": "library",
+      "name": "github.com/ugorji/go/codec",
+      "version": "v1.2.7",
+      "cpe": "cpe:2.3:a:ugorji:go\\/codec:v1.2.7:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/github.com/ugorji/go@v1.2.7#codec",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "go-module-buildinfo-entry"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:fc5ee1f2a20b3f8ba1504b2c550011ee21c45d0a338c7a5933a133a21ed62f7f"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/hello-melange-apko"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.23.12"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:YPXUKf7fYbp/y8xloBqZOw2qaVggbfwMlI8WM3wZUJ0="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "hello-server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/crypto@v0.0.0-20210711020723-a769d52b0f97?package-id=20ac90add01e34df",
+      "type": "library",
+      "name": "golang.org/x/crypto",
+      "version": "v0.0.0-20210711020723-a769d52b0f97",
+      "cpe": "cpe:2.3:a:go:ssh:v0.0.0-20210711020723-a769d52b0f97:*:*:*:*:go:*:*",
+      "purl": "pkg:golang/golang.org/x/crypto@v0.0.0-20210711020723-a769d52b0f97",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "go-module-buildinfo-entry"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:fc5ee1f2a20b3f8ba1504b2c550011ee21c45d0a338c7a5933a133a21ed62f7f"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/hello-melange-apko"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.23.12"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:/UOmuWzQfxxo9UtlXMwuQU8CMgg1eZXqTRwkSQJWKOI="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "hello-server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/net@v0.0.0-20210226172049-e18ecbb05110?package-id=9de0d9b40a0fdea8",
+      "type": "library",
+      "name": "golang.org/x/net",
+      "version": "v0.0.0-20210226172049-e18ecbb05110",
+      "cpe": "cpe:2.3:a:golang:networking:v0.0.0-20210226172049-e18ecbb05110:*:*:*:*:go:*:*",
+      "purl": "pkg:golang/golang.org/x/net@v0.0.0-20210226172049-e18ecbb05110",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "go-module-buildinfo-entry"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:fc5ee1f2a20b3f8ba1504b2c550011ee21c45d0a338c7a5933a133a21ed62f7f"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/hello-melange-apko"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.23.12"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:qWPm9rbaAMKs8Bq/9LRpbMqxWRVUAQwMI9fVrssnTfw="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "hello-server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/sys@v0.0.0-20210806184541-e5e7981a1069?package-id=ba4682add5ac0ae9",
+      "type": "library",
+      "name": "golang.org/x/sys",
+      "version": "v0.0.0-20210806184541-e5e7981a1069",
+      "cpe": "cpe:2.3:a:golang:x\\/sys:v0.0.0-20210806184541-e5e7981a1069:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/golang.org/x/sys@v0.0.0-20210806184541-e5e7981a1069",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "go-module-buildinfo-entry"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:fc5ee1f2a20b3f8ba1504b2c550011ee21c45d0a338c7a5933a133a21ed62f7f"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/hello-melange-apko"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.23.12"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:siQdpVirKtzPhKl3lZWozZraCFObP8S1v6PRp0bLrtU="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "hello-server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/golang.org/x/text@v0.3.6?package-id=03d480a6d04efe7b",
+      "type": "library",
+      "name": "golang.org/x/text",
+      "version": "v0.3.6",
+      "cpe": "cpe:2.3:a:golang:text:v0.3.6:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/golang.org/x/text@v0.3.6",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "go-module-buildinfo-entry"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:fc5ee1f2a20b3f8ba1504b2c550011ee21c45d0a338c7a5933a133a21ed62f7f"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/hello-melange-apko"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.23.12"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:aRYxNxv6iGQlyVaZmk6ZgYEDa+Jg18DxebPSrd6bg1M="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "hello-server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/google.golang.org/protobuf@v1.28.0?package-id=71d0bf0239eea3f2",
+      "type": "library",
+      "name": "google.golang.org/protobuf",
+      "version": "v1.28.0",
+      "cpe": "cpe:2.3:a:google:protobuf:v1.28.0:*:*:*:*:*:*:*",
+      "purl": "pkg:golang/google.golang.org/protobuf@v1.28.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "go-module-buildinfo-entry"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:fc5ee1f2a20b3f8ba1504b2c550011ee21c45d0a338c7a5933a133a21ed62f7f"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/hello-melange-apko"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.23.12"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:w43yiav+6bVFTBQFZX0r7ipe9JQ1QsbMgHwbBziscLw="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "hello-server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/gopkg.in/yaml.v2@v2.4.0?package-id=86dddc5486244017",
+      "type": "library",
+      "name": "gopkg.in/yaml.v2",
+      "version": "v2.4.0",
+      "purl": "pkg:golang/gopkg.in/yaml.v2@v2.4.0",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "go-module-buildinfo-entry"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:fc5ee1f2a20b3f8ba1504b2c550011ee21c45d0a338c7a5933a133a21ed62f7f"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/hello-melange-apko"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.23.12"
+        },
+        {
+          "name": "syft:metadata:h1Digest",
+          "value": "h1:D8xgwECY7CYvx+Y2n4sBz93Jn9JRvxdiyyo8CTfuKaY="
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "hello-server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/hello-server?package-id=1e3477af25badc6f",
+      "type": "library",
+      "name": "hello-server",
+      "version": "UNKNOWN",
+      "purl": "pkg:golang/hello-server",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "go-module-buildinfo-entry"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:fc5ee1f2a20b3f8ba1504b2c550011ee21c45d0a338c7a5933a133a21ed62f7f"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/hello-melange-apko"
+        },
+        {
+          "name": "syft:metadata:architecture",
+          "value": "amd64"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.23.12"
+        },
+        {
+          "name": "syft:metadata:mainModule",
+          "value": "hello-server"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libapk2@2.14.9-r3?arch=x86_64&distro=alpine-3.22.2&package-id=7d8bbb1a55a55293&upstream=apk-tools",
+      "type": "library",
+      "publisher": "Natanael Copa <ncopa@alpinelinux.org>",
+      "name": "libapk2",
+      "version": "2.14.9-r3",
+      "description": "Alpine Package Keeper - package manager for alpine",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:libapk2:libapk2:2.14.9-r3:*:*:*:*:*:*:*",
+      "purl": "pkg:apk/alpine/libapk2@2.14.9-r3?arch=x86_64&distro=alpine-3.22.2&upstream=apk-tools",
+      "externalReferences": [
+        {
+          "url": "https://gitlab.alpinelinux.org/alpine/apk-tools",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "apk-db-cataloger"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "apk"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "apk-db-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:libapk2:libapk:2.14.9-r3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:libapk:libapk2:2.14.9-r3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:libapk:libapk:2.14.9-r3:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:5d80999d28e9df8eead40c070eb29c3c0dd89104b03424c4fa6712707c76f74b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:metadata:gitCommitOfApkPort",
+          "value": "a75f93ccd6e481eaf60f204061ac34bf04e3a598"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "183992"
+        },
+        {
+          "name": "syft:metadata:originPackage",
+          "value": "apk-tools"
+        },
+        {
+          "name": "syft:metadata:provides:0",
+          "value": "so:libapk.so.2.14.9=2.14.9"
+        },
+        {
+          "name": "syft:metadata:pullChecksum",
+          "value": "Q1kC/XFkbW4IfkcsZ7D2NMBDohlbw="
+        },
+        {
+          "name": "syft:metadata:pullDependencies:0",
+          "value": "musl>=1.2.3_git20230424"
+        },
+        {
+          "name": "syft:metadata:pullDependencies:1",
+          "value": "libcrypto3>=3.5"
+        },
+        {
+          "name": "syft:metadata:pullDependencies:2",
+          "value": "ca-certificates-bundle"
+        },
+        {
+          "name": "syft:metadata:pullDependencies:3",
+          "value": "so:libc.musl-x86_64.so.1"
+        },
+        {
+          "name": "syft:metadata:pullDependencies:4",
+          "value": "so:libcrypto.so.3"
+        },
+        {
+          "name": "syft:metadata:pullDependencies:5",
+          "value": "so:libssl.so.3"
+        },
+        {
+          "name": "syft:metadata:pullDependencies:6",
+          "value": "so:libz.so.1"
+        },
+        {
+          "name": "syft:metadata:size",
+          "value": "89030"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libcrypto3@3.5.4-r0?arch=x86_64&distro=alpine-3.22.2&package-id=bf7144a0fb7fd1d8&upstream=openssl",
+      "type": "library",
+      "publisher": "Natanael Copa <ncopa@alpinelinux.org>",
+      "name": "libcrypto3",
+      "version": "3.5.4-r0",
+      "description": "Crypto library from openssl",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:libcrypto3:libcrypto3:3.5.4-r0:*:*:*:*:*:*:*",
+      "purl": "pkg:apk/alpine/libcrypto3@3.5.4-r0?arch=x86_64&distro=alpine-3.22.2&upstream=openssl",
+      "externalReferences": [
+        {
+          "url": "https://www.openssl.org/",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "apk-db-cataloger"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "apk"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "apk-db-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:libcrypto3:libcrypto:3.5.4-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:libcrypto:libcrypto3:3.5.4-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:libcrypto:libcrypto:3.5.4-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:5d80999d28e9df8eead40c070eb29c3c0dd89104b03424c4fa6712707c76f74b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:metadata:gitCommitOfApkPort",
+          "value": "8f330e62bd41c2ac23dbd866fea36fb8e22f8422"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "5213782"
+        },
+        {
+          "name": "syft:metadata:originPackage",
+          "value": "openssl"
+        },
+        {
+          "name": "syft:metadata:provides:0",
+          "value": "so:libcrypto.so.3=3"
+        },
+        {
+          "name": "syft:metadata:pullChecksum",
+          "value": "Q1gUoTK2MekZ70GEdYeee87CFqCmI="
+        },
+        {
+          "name": "syft:metadata:pullDependencies:0",
+          "value": "so:libc.musl-x86_64.so.1"
+        },
+        {
+          "name": "syft:metadata:size",
+          "value": "1979875"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/libssl3@3.5.4-r0?arch=x86_64&distro=alpine-3.22.2&package-id=84be5059103dde2f&upstream=openssl",
+      "type": "library",
+      "publisher": "Natanael Copa <ncopa@alpinelinux.org>",
+      "name": "libssl3",
+      "version": "3.5.4-r0",
+      "description": "SSL shared libraries",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:libssl3:libssl3:3.5.4-r0:*:*:*:*:*:*:*",
+      "purl": "pkg:apk/alpine/libssl3@3.5.4-r0?arch=x86_64&distro=alpine-3.22.2&upstream=openssl",
+      "externalReferences": [
+        {
+          "url": "https://www.openssl.org/",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "apk-db-cataloger"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "apk"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "apk-db-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:libssl3:libssl:3.5.4-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:libssl:libssl3:3.5.4-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:libssl:libssl:3.5.4-r0:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:5d80999d28e9df8eead40c070eb29c3c0dd89104b03424c4fa6712707c76f74b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:metadata:gitCommitOfApkPort",
+          "value": "8f330e62bd41c2ac23dbd866fea36fb8e22f8422"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "843640"
+        },
+        {
+          "name": "syft:metadata:originPackage",
+          "value": "openssl"
+        },
+        {
+          "name": "syft:metadata:provides:0",
+          "value": "so:libssl.so.3=3"
+        },
+        {
+          "name": "syft:metadata:pullChecksum",
+          "value": "Q1+MGGRUg3I6lBYhilLro9NMhoWM8="
+        },
+        {
+          "name": "syft:metadata:pullDependencies:0",
+          "value": "libcrypto3=3.5.4-r0"
+        },
+        {
+          "name": "syft:metadata:pullDependencies:1",
+          "value": "so:libc.musl-x86_64.so.1"
+        },
+        {
+          "name": "syft:metadata:pullDependencies:2",
+          "value": "so:libcrypto.so.3"
+        },
+        {
+          "name": "syft:metadata:size",
+          "value": "380153"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/musl@1.2.5-r10?arch=x86_64&distro=alpine-3.22.2&package-id=f2452ca0a998f0c0",
+      "type": "library",
+      "publisher": "Natanael Copa <ncopa@alpinelinux.org>",
+      "name": "musl",
+      "version": "1.2.5-r10",
+      "description": "the musl c library (libc) implementation",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:musl-libc:musl:1.2.5-r10:*:*:*:*:*:*:*",
+      "purl": "pkg:apk/alpine/musl@1.2.5-r10?arch=x86_64&distro=alpine-3.22.2",
+      "externalReferences": [
+        {
+          "url": "https://musl.libc.org/",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "apk-db-cataloger"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "apk"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "apk-db-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:musl_libc:musl:1.2.5-r10:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:musl:musl:1.2.5-r10:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:5d80999d28e9df8eead40c070eb29c3c0dd89104b03424c4fa6712707c76f74b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:metadata:gitCommitOfApkPort",
+          "value": "1a5f5e699b2eae883e73c93a789f87bd89a2a190"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "662120"
+        },
+        {
+          "name": "syft:metadata:originPackage",
+          "value": "musl"
+        },
+        {
+          "name": "syft:metadata:provides:0",
+          "value": "so:libc.musl-x86_64.so.1=1"
+        },
+        {
+          "name": "syft:metadata:pullChecksum",
+          "value": "Q1WSg7YduDCgoDCcmPTbkGotj6NCs="
+        },
+        {
+          "name": "syft:metadata:size",
+          "value": "411378"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/musl-utils@1.2.5-r10?arch=x86_64&distro=alpine-3.22.2&package-id=9a0e8e6d80fb5c12&upstream=musl",
+      "type": "library",
+      "publisher": "Natanael Copa <ncopa@alpinelinux.org>",
+      "name": "musl-utils",
+      "version": "1.2.5-r10",
+      "description": "the musl c library (libc) implementation",
+      "licenses": [
+        {
+          "expression": "MIT AND BSD-2-Clause AND GPL-2.0-or-later"
+        }
+      ],
+      "cpe": "cpe:2.3:a:musl-utils:musl-utils:1.2.5-r10:*:*:*:*:*:*:*",
+      "purl": "pkg:apk/alpine/musl-utils@1.2.5-r10?arch=x86_64&distro=alpine-3.22.2&upstream=musl",
+      "externalReferences": [
+        {
+          "url": "https://musl.libc.org/",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "apk-db-cataloger"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "apk"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "apk-db-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:musl-utils:musl_utils:1.2.5-r10:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:musl_utils:musl-utils:1.2.5-r10:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:musl_utils:musl_utils:1.2.5-r10:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:musl-libc:musl-utils:1.2.5-r10:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:musl-libc:musl_utils:1.2.5-r10:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:musl:musl-utils:1.2.5-r10:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:musl:musl_utils:1.2.5-r10:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:5d80999d28e9df8eead40c070eb29c3c0dd89104b03424c4fa6712707c76f74b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:metadata:gitCommitOfApkPort",
+          "value": "1a5f5e699b2eae883e73c93a789f87bd89a2a190"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "55421"
+        },
+        {
+          "name": "syft:metadata:originPackage",
+          "value": "musl"
+        },
+        {
+          "name": "syft:metadata:provides:0",
+          "value": "libc-utils=1.2.5-r10"
+        },
+        {
+          "name": "syft:metadata:provides:1",
+          "value": "cmd:getconf=1.2.5-r10"
+        },
+        {
+          "name": "syft:metadata:provides:2",
+          "value": "cmd:getent=1.2.5-r10"
+        },
+        {
+          "name": "syft:metadata:provides:3",
+          "value": "cmd:iconv=1.2.5-r10"
+        },
+        {
+          "name": "syft:metadata:provides:4",
+          "value": "cmd:ldconfig=1.2.5-r10"
+        },
+        {
+          "name": "syft:metadata:provides:5",
+          "value": "cmd:ldd=1.2.5-r10"
+        },
+        {
+          "name": "syft:metadata:pullChecksum",
+          "value": "Q1fmDQgggTuqisJmvuFYOUwKafEEo="
+        },
+        {
+          "name": "syft:metadata:pullDependencies:0",
+          "value": "scanelf"
+        },
+        {
+          "name": "syft:metadata:pullDependencies:1",
+          "value": "so:libc.musl-x86_64.so.1"
+        },
+        {
+          "name": "syft:metadata:size",
+          "value": "13647"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/scanelf@1.3.8-r1?arch=x86_64&distro=alpine-3.22.2&package-id=65b930a26ee8f44e&upstream=pax-utils",
+      "type": "library",
+      "publisher": "Natanael Copa <ncopa@alpinelinux.org>",
+      "name": "scanelf",
+      "version": "1.3.8-r1",
+      "description": "Scan ELF binaries for stuff",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:scanelf:scanelf:1.3.8-r1:*:*:*:*:*:*:*",
+      "purl": "pkg:apk/alpine/scanelf@1.3.8-r1?arch=x86_64&distro=alpine-3.22.2&upstream=pax-utils",
+      "externalReferences": [
+        {
+          "url": "https://wiki.gentoo.org/wiki/Hardened/PaX_Utilities",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "apk-db-cataloger"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "apk"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "apk-db-entry"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:5d80999d28e9df8eead40c070eb29c3c0dd89104b03424c4fa6712707c76f74b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:metadata:gitCommitOfApkPort",
+          "value": "9818c555f344e3085d0dd1f3d917d8e23e244cb1"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "67504"
+        },
+        {
+          "name": "syft:metadata:originPackage",
+          "value": "pax-utils"
+        },
+        {
+          "name": "syft:metadata:provides:0",
+          "value": "cmd:scanelf=1.3.8-r1"
+        },
+        {
+          "name": "syft:metadata:pullChecksum",
+          "value": "Q1vW3RyCDUdrzfjuOPADvPKnMyOxM="
+        },
+        {
+          "name": "syft:metadata:pullDependencies:0",
+          "value": "so:libc.musl-x86_64.so.1"
+        },
+        {
+          "name": "syft:metadata:size",
+          "value": "32500"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/ssl_client@1.37.0-r19?arch=x86_64&distro=alpine-3.22.2&package-id=ba73ff15639bf9a7&upstream=busybox",
+      "type": "library",
+      "publisher": "Sören Tempel <soeren+alpine@soeren-tempel.net>",
+      "name": "ssl_client",
+      "version": "1.37.0-r19",
+      "description": "External ssl_client for busybox wget",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:ssl-client:ssl-client:1.37.0-r19:*:*:*:*:*:*:*",
+      "purl": "pkg:apk/alpine/ssl_client@1.37.0-r19?arch=x86_64&distro=alpine-3.22.2&upstream=busybox",
+      "externalReferences": [
+        {
+          "url": "https://busybox.net/",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "apk-db-cataloger"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "apk"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "apk-db-entry"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:ssl-client:ssl_client:1.37.0-r19:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:ssl_client:ssl-client:1.37.0-r19:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:ssl_client:ssl_client:1.37.0-r19:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:ssl:ssl-client:1.37.0-r19:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:cpe23",
+          "value": "cpe:2.3:a:ssl:ssl_client:1.37.0-r19:*:*:*:*:*:*:*"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:5d80999d28e9df8eead40c070eb29c3c0dd89104b03424c4fa6712707c76f74b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:metadata:gitCommitOfApkPort",
+          "value": "bd8ab811155a6087ba7480103d89e2500e3cb0eb"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "14384"
+        },
+        {
+          "name": "syft:metadata:originPackage",
+          "value": "busybox"
+        },
+        {
+          "name": "syft:metadata:provides:0",
+          "value": "cmd:ssl_client=1.37.0-r19"
+        },
+        {
+          "name": "syft:metadata:pullChecksum",
+          "value": "Q1INz69tEIGwfNE4yrsy2Rr+ca0Jw="
+        },
+        {
+          "name": "syft:metadata:pullDependencies:0",
+          "value": "so:libc.musl-x86_64.so.1"
+        },
+        {
+          "name": "syft:metadata:pullDependencies:1",
+          "value": "so:libcrypto.so.3"
+        },
+        {
+          "name": "syft:metadata:pullDependencies:2",
+          "value": "so:libssl.so.3"
+        },
+        {
+          "name": "syft:metadata:size",
+          "value": "4688"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:golang/stdlib@1.23.12?package-id=e64ee97d1c991963",
+      "type": "library",
+      "name": "stdlib",
+      "version": "go1.23.12",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:golang:go:1.23.12:-:*:*:*:*:*:*",
+      "purl": "pkg:golang/stdlib@1.23.12",
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "go-module-binary-cataloger"
+        },
+        {
+          "name": "syft:package:language",
+          "value": "go"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "go-module"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "go-module-buildinfo-entry"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:fc5ee1f2a20b3f8ba1504b2c550011ee21c45d0a338c7a5933a133a21ed62f7f"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/app/hello-melange-apko"
+        },
+        {
+          "name": "syft:metadata:goCompiledVersion",
+          "value": "go1.23.12"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64&distro=alpine-3.22.2&package-id=d03841ef6ae18e18",
+      "type": "library",
+      "publisher": "Natanael Copa <ncopa@alpinelinux.org>",
+      "name": "zlib",
+      "version": "1.3.1-r2",
+      "description": "A compression/decompression Library",
+      "licenses": [
+        {
+          "license": {
+            "id": "Zlib"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:zlib:zlib:1.3.1-r2:*:*:*:*:*:*:*",
+      "purl": "pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64&distro=alpine-3.22.2",
+      "externalReferences": [
+        {
+          "url": "https://zlib.net/",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:package:foundBy",
+          "value": "apk-db-cataloger"
+        },
+        {
+          "name": "syft:package:type",
+          "value": "apk"
+        },
+        {
+          "name": "syft:package:metadataType",
+          "value": "apk-db-entry"
+        },
+        {
+          "name": "syft:location:0:layerID",
+          "value": "sha256:5d80999d28e9df8eead40c070eb29c3c0dd89104b03424c4fa6712707c76f74b"
+        },
+        {
+          "name": "syft:location:0:path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "syft:metadata:gitCommitOfApkPort",
+          "value": "4c2722e7ecc1c5e3ba882429044a101497121223"
+        },
+        {
+          "name": "syft:metadata:installedSize",
+          "value": "104280"
+        },
+        {
+          "name": "syft:metadata:originPackage",
+          "value": "zlib"
+        },
+        {
+          "name": "syft:metadata:provides:0",
+          "value": "so:libz.so.1=1.3.1"
+        },
+        {
+          "name": "syft:metadata:pullChecksum",
+          "value": "Q1v32Q2J5UKcGBZ7kauNfmJWz8f98="
+        },
+        {
+          "name": "syft:metadata:pullDependencies:0",
+          "value": "so:libc.musl-x86_64.so.1"
+        },
+        {
+          "name": "syft:metadata:size",
+          "value": "54039"
+        }
+      ]
+    },
+    {
+      "bom-ref": "os:alpine@3.22.2",
+      "type": "operating-system",
+      "name": "alpine",
+      "version": "3.22.2",
+      "description": "Alpine Linux v3.22",
+      "swid": {
+        "tagId": "alpine",
+        "name": "alpine",
+        "version": "3.22.2"
+      },
+      "externalReferences": [
+        {
+          "url": "https://gitlab.alpinelinux.org/alpine/aports/-/issues",
+          "type": "issue-tracker"
+        },
+        {
+          "url": "https://alpinelinux.org/",
+          "type": "website"
+        }
+      ],
+      "properties": [
+        {
+          "name": "syft:distro:extendedSupport",
+          "value": "false"
+        },
+        {
+          "name": "syft:distro:id",
+          "value": "alpine"
+        },
+        {
+          "name": "syft:distro:prettyName",
+          "value": "Alpine Linux v3.22"
+        },
+        {
+          "name": "syft:distro:versionID",
+          "value": "3.22.2"
+        }
+      ]
+    },
+    {
+      "bom-ref": "379f9ab42733744f",
+      "type": "file",
+      "name": "/bin/busybox",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "4aedf56d1ed00ff1d49b0e0686d5e486b8d2f1f6"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "f8da75b34117606e12778a8573b13a146735c4cfdfb4efe7203a524c3ec461f0"
+        }
+      ]
+    },
+    {
+      "bom-ref": "70cd6cff397ff920",
+      "type": "file",
+      "name": "/etc/alpine-release",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "20ee8f583feeb2ba0fda3713b0e15ced38b60bff"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "88273e458ab7d4f9835d59b21bc8896cc6ce4ea3d5f3abd3dd550463d5c9243b"
+        }
+      ]
+    },
+    {
+      "bom-ref": "eb6494e0a1225828",
+      "type": "file",
+      "name": "/etc/apk/keys/alpine-devel@lists.alpinelinux.org-4a6a0840.rsa.pub",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3af08548ef78cfdedcf349880c2c6a1a48763a0e"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "9c102bcc376af1498d549b77bdbfa815ae86faa1d2d82f040e616b18ef2df2d4"
+        }
+      ]
+    },
+    {
+      "bom-ref": "60c43bf1b61a4c38",
+      "type": "file",
+      "name": "/etc/apk/keys/alpine-devel@lists.alpinelinux.org-5243ef4b.rsa.pub",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "bfb616658cc05a872568b0c8e398c482e23b60dd"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "ebf31683b56410ecc4c00acd9f6e2839e237a3b62b5ae7ef686705c7ba0396a9"
+        }
+      ]
+    },
+    {
+      "bom-ref": "6610e39dc974e412",
+      "type": "file",
+      "name": "/etc/apk/keys/alpine-devel@lists.alpinelinux.org-5261cecb.rsa.pub",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3671ae0ec7503b1e193587c1dcdf7b78bc863e42"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "12f899e55a7691225603d6fb3324940fc51cd7f133e7ead788663c2b7eecb00c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "8603857a7531e28a",
+      "type": "file",
+      "name": "/etc/apk/keys/alpine-devel@lists.alpinelinux.org-6165ee59.rsa.pub",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "95995311236b7a55933642ffa10ce6014f1af7d0"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "207e4696d3c05f7cb05966aee557307151f1f00217af4143c1bcaf33b8df733f"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e977a7023cb6f8d6",
+      "type": "file",
+      "name": "/etc/apk/keys/alpine-devel@lists.alpinelinux.org-61666e3f.rsa.pub",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "58d5ba4b2f3b1e927721d7a6432f298eedf72a6b"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "128d34d4aec39b0daedea8163cd8dc24dff36fd3d848630ab97eeb1d3084bbb3"
+        }
+      ]
+    },
+    {
+      "bom-ref": "927f30c3a6817b77",
+      "type": "file",
+      "name": "/etc/busybox-paths.d/busybox",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "af9972dab927fb4bfcbf574de8cf870492a66657"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "e12e0822f5c6426b62f07799a0fc20394241535c5bc2cc8f10c8a25088b8defa"
+        }
+      ]
+    },
+    {
+      "bom-ref": "1d69fe98326f05e0",
+      "type": "file",
+      "name": "/etc/crontabs/root",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "bdf9356a9516238c8b2468613517749098b17ef6"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "575d810a9fae5f2f0671c9b2c0ce973e46c7207fbe5cb8d1b0d1836a6a0470e3"
+        }
+      ]
+    },
+    {
+      "bom-ref": "8d69d33d810e7e0e",
+      "type": "file",
+      "name": "/etc/fstab",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d50ee135ef10a434b9df582ea8276b5c1ce803fa"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "a3efca2e8d62785c87517283092b4c800d88612b6f3f06b80a4c2f39d8e68841"
+        }
+      ]
+    },
+    {
+      "bom-ref": "5deb7bc1b557d373",
+      "type": "file",
+      "name": "/etc/group",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d8eb64e0cdfd7cfd998e4a1bbb49c2f45be5448d"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "6fb6ab5a5526e6f4896b70c7e3c350fd475158a1f0d7b5fc0f3f9bd57f1c3be8"
+        }
+      ]
+    },
+    {
+      "bom-ref": "c4d0017b52a1feea",
+      "type": "file",
+      "name": "/etc/hostname",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "ea75706155cffed0a1bd43ddba4543da27d73a67"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "d906aecb61d076a967d9ffe8821c7b04b063f72df9d9e35b33ef36b1c0d98f16"
+        }
+      ]
+    },
+    {
+      "bom-ref": "221291d4d967dfc2",
+      "type": "file",
+      "name": "/etc/hosts",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "043eb324a653456caa1a73e2e2d49f77792bb0c5"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "e3998dbe02b51dada33de87ae43d18a93ab6915b9e34f5a751bf2b9b25a55492"
+        }
+      ]
+    },
+    {
+      "bom-ref": "a50b3949480406c2",
+      "type": "file",
+      "name": "/etc/inittab",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "ce9586d2acf1d9462765259a21ccc4f96a402151"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "7326d8ad56bf5fea63b1ca516a747ff6e6723e25ae84a93c31620b03de6c001d"
+        }
+      ]
+    },
+    {
+      "bom-ref": "6cd28852a90fc85f",
+      "type": "file",
+      "name": "/etc/issue",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "899b1b34c0b62345726735f736a841e959f99414"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "9b89537422a64a9a9407d3cafdf58c802375849629b8f43e64f1cfd7f07c782a"
+        }
+      ]
+    },
+    {
+      "bom-ref": "9caf0d60bb8bb153",
+      "type": "file",
+      "name": "/etc/logrotate.d/acpid",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "4f29720883559a74be03f4de69de2f66113b064b"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "d608a3b7715886b5735def0cc50a6359fd364fac2e0e0a459c588c04be471031"
+        }
+      ]
+    },
+    {
+      "bom-ref": "df55aae656204f1c",
+      "type": "file",
+      "name": "/etc/modprobe.d/aliases.conf",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "5946e1e930583552bb7b863eb94bcbb3feef8aa9"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "3ebaba946f213670170c7d69949f690a3854553bd0b1560f1d980cba4c83a942"
+        }
+      ]
+    },
+    {
+      "bom-ref": "7ff192b33a50e1ab",
+      "type": "file",
+      "name": "/etc/modprobe.d/blacklist.conf",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "e1376014791376ddee402f8d06dae7b4e9e6f67e"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "5cd46031fc7dc7186e67c97fd34780597de4ebff51dbe41eba27220fe5e0d866"
+        }
+      ]
+    },
+    {
+      "bom-ref": "704b5ca7e86c04d8",
+      "type": "file",
+      "name": "/etc/modprobe.d/i386.conf",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "a676b2fe78e7ea897d702b2c2fb2a2659f1eb657"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "6c46c4cbfb8b7594f19eb94801a350fa2221ae9ac5239a8819d15555caa76ae8"
+        }
+      ]
+    },
+    {
+      "bom-ref": "013b5408e9de2036",
+      "type": "file",
+      "name": "/etc/modules",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "b68a208d48a91c670c8040a03c95fae12c144f53"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "2c881de75a5409c35d2433a24f180b8b02ba478ef2c1c60ea3434a35bcbc335d"
+        }
+      ]
+    },
+    {
+      "bom-ref": "f14a85352936059c",
+      "type": "file",
+      "name": "/etc/motd",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "48b912f610627546cfc30af0f974745a1bf7c30f"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "ff044e9be5daa2eee2d3d10a4da72e5477e4c24c16f1792de2c91dae844c0e30"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e24d3cf7d4076766",
+      "type": "file",
+      "name": "/etc/network/if-up.d/dad",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "ddd99bc197c36e8a9aab9463aaeebda44a7a8029"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "2fd20d1bc67d9ee711990002b24f156635a73f56b8935b2f76592938817fa4e7"
+        }
+      ]
+    },
+    {
+      "bom-ref": "896c3cff0a2a7234",
+      "type": "file",
+      "name": "/etc/nsswitch.conf",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "f4306c327bf44767da8da4e3a13bf40bdd4d3aaa"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "0afd94c183d30a348b45057f6bf468e121aa448a7641109addb5bb8e282f514d"
+        }
+      ]
+    },
+    {
+      "bom-ref": "56bf8db299a16362",
+      "type": "file",
+      "name": "/etc/passwd",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "afe6cba27664032062c7f1cb812783b1ecf6d99b"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "31a94f06f17bc3b9085fccab1d0fa6ee9e79c4a1e4d91f617fa5de95863be015"
+        }
+      ]
+    },
+    {
+      "bom-ref": "1bda1aaa091f2674",
+      "type": "file",
+      "name": "/etc/profile",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "54dd1d99ac0383798113f96307ee9b52b0bb0f37"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "87e8643d3ce156de0c09370d4d39446f30bd00d264bea248abc191c4d7b9df3e"
+        }
+      ]
+    },
+    {
+      "bom-ref": "f585d907021651bd",
+      "type": "file",
+      "name": "/etc/profile.d/20locale.sh",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "96adbd950ccf992085295990f9bbe667f0cf4c4e"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "284a6ef56ab97a13a777c6b01ae14f2cc3d2b7a29c19e750e622e70cc3c73186"
+        }
+      ]
+    },
+    {
+      "bom-ref": "a2597573153c4360",
+      "type": "file",
+      "name": "/etc/profile.d/README",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "df9396b02cf3be70767e6171eb691baa6d40c759"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "b73284f27fe2da9ae1902b1fe9596c3ffc61a154e2805a034184f0468f8b09b0"
+        }
+      ]
+    },
+    {
+      "bom-ref": "666f610d4513f557",
+      "type": "file",
+      "name": "/etc/profile.d/color_prompt.sh.disabled",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d5733d99d7b5676f6d58c19a3a47a8bc3fe6e2e5"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "ba24425c6864a5d17fa0fdaf914c4d21419e47c4d62080c33830af059fe46617"
+        }
+      ]
+    },
+    {
+      "bom-ref": "526ccacfa7119369",
+      "type": "file",
+      "name": "/etc/protocols",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d5f9654539089b96f1b1956848d783527da6fb47"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "4959498abbadaa1e50894a266f8d0d94500101cfe5b5f09dcad82e9d5bdfab46"
+        }
+      ]
+    },
+    {
+      "bom-ref": "a6ba1a693d2851ee",
+      "type": "file",
+      "name": "/etc/secfixes.d/alpine",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "eb84e8a11ac9f18fd71f0d34e8155c3d287a3c43"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "808a19d200c575a9bd9898b113ca4538bb142878dd6a8e5f14804ba9ae3f5c38"
+        }
+      ]
+    },
+    {
+      "bom-ref": "dc985829cde085ac",
+      "type": "file",
+      "name": "/etc/securetty",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "0e29ce7fa251a4246033abcdaa339ec5dde84a75"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "713fcea5109728883b9147e822429133fcc8b5e253afd3c2a197b10cd0bc3b4d"
+        }
+      ]
+    },
+    {
+      "bom-ref": "3272dcf872ed1fd6",
+      "type": "file",
+      "name": "/etc/services",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "a0d7a229bf049f7fe17e8445226236e4024535d0"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "f6183055fd949f9c53d49ee620f85d0150123ea691d25ed1bba0c641b4ee2f48"
+        }
+      ]
+    },
+    {
+      "bom-ref": "c9c92e1db22f8789",
+      "type": "file",
+      "name": "/etc/shadow",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "fdcce813d9a3aa27fffcf07126d2deabf17cb057"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "d5992a27f05f380fc5faeb82a3359e2f230fd1d6ea6517b45892b771a2194ddb"
+        }
+      ]
+    },
+    {
+      "bom-ref": "5b41981bb6bf6706",
+      "type": "file",
+      "name": "/etc/shells",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "a239b661da4227a07f6a9183699fd275bdb12640"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "24be6ceb236610df45684c83b06c918ae45635be55f69975e43676b7595bbc5f"
+        }
+      ]
+    },
+    {
+      "bom-ref": "47176101146e365b",
+      "type": "file",
+      "name": "/etc/ssl/ct_log_list.cnf",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "a2587c4e97408b64274e5e052b74e3754892c13a"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "f1c1803d13d1d0b755b13b23c28bd4e20e07baf9f2b744c9337ba5866aa0ec3b"
+        }
+      ]
+    },
+    {
+      "bom-ref": "dd5d14cccf3fe7d1",
+      "type": "file",
+      "name": "/etc/ssl/ct_log_list.cnf.dist",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "a2587c4e97408b64274e5e052b74e3754892c13a"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "f1c1803d13d1d0b755b13b23c28bd4e20e07baf9f2b744c9337ba5866aa0ec3b"
+        }
+      ]
+    },
+    {
+      "bom-ref": "dac9ba510ce8c0df",
+      "type": "file",
+      "name": "/etc/ssl/openssl.cnf",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "5ff8070dceaa742043d8171f98abe95e5abd02e5"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "a65a2cb9f4ee8ffdc7ef4f0ac600c0bdafb95b7b1ab457188ac610a62f5ad6b3"
+        }
+      ]
+    },
+    {
+      "bom-ref": "b9a1c410794742f5",
+      "type": "file",
+      "name": "/etc/ssl/openssl.cnf.dist",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "5ff8070dceaa742043d8171f98abe95e5abd02e5"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "a65a2cb9f4ee8ffdc7ef4f0ac600c0bdafb95b7b1ab457188ac610a62f5ad6b3"
+        }
+      ]
+    },
+    {
+      "bom-ref": "1845a1ac1d8af1e5",
+      "type": "file",
+      "name": "/etc/sysctl.conf",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "e2ea73ded7e7371664204b148569fb5e88b0f7a8"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "8bba47da45bc8715c69ac904a60410eabffaa7bbbef640f9c1368ab9c48493d0"
+        }
+      ]
+    },
+    {
+      "bom-ref": "aafeba7b930c821b",
+      "type": "file",
+      "name": "/etc/udhcpc/udhcpc.conf",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "9bc069e434228e6ca441848bfb7a6bac23fa148a"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "5b372209e01cda07c87b8afa6d1ab3d7e8daf18a1f2332d744203a6dc289eb1a"
+        }
+      ]
+    },
+    {
+      "bom-ref": "fb7feebe37adfa7f",
+      "type": "file",
+      "name": "/lib/ld-musl-x86_64.so.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "8cd6ae4cc97899e68e9c22264f9235e3f90e0d95"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "7d221f4e17e8f7ebfc208d6e621bb7fc71bc99081bed47409d77048d9a69dbd5"
+        }
+      ]
+    },
+    {
+      "bom-ref": "c4253d051be020aa",
+      "type": "file",
+      "name": "/sbin/apk",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "50e2e24fea3ef8181a9821c766597dee94788538"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "a3b505523048114b137e197953418d82700d5c080e3831de1f936dd3507ca43a"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d9239e6144bac74d",
+      "type": "file",
+      "name": "/sbin/ldconfig",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "2a36b6f8f3992b112450e66ac128c2ea499a103e"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "b4a2c06db38742e8c42c3c9838b285a7d8cdac6c091ff3df5ff9a15f1e41b9c7"
+        }
+      ]
+    },
+    {
+      "bom-ref": "52c157c35f12851d",
+      "type": "file",
+      "name": "/usr/bin/getconf",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "bc161d0ecb081bf233d15ddffff3560fc7d60ca0"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "4dbaf95eab0e2e2e727c5e903b97100215cd16f463aa29e5f72af74951fe425a"
+        }
+      ]
+    },
+    {
+      "bom-ref": "89bc920292dbad96",
+      "type": "file",
+      "name": "/usr/bin/getent",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "e5124ed2546028c4b79387857bbad2b4d454c7bf"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "682137a98bd8062d4be1f4be7a68410dfbb4e6f9359a3b3c163890a2fcde4518"
+        }
+      ]
+    },
+    {
+      "bom-ref": "5cee61e5e65f4f2d",
+      "type": "file",
+      "name": "/usr/bin/iconv",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "76ab4d99a7dd98e37a2a4cb96ae0033c6ade033e"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "3cf6eb89e6481a54d8a9df0f302bb633c4f01673bb3a143ac3d4e084997f3167"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d7c7cfa0861162ad",
+      "type": "file",
+      "name": "/usr/bin/ldd",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "c850211a08262fb11181b200eca431c93cdfde4b"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "9a49c2541a439be89f1ef1496604ef3b607f460d589877c60775acf74cdb5dfb"
+        }
+      ]
+    },
+    {
+      "bom-ref": "ff5b5bab6b551ed9",
+      "type": "file",
+      "name": "/usr/bin/scanelf",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "9a08aa433b3c1e76b0ae31f82e0f0fac0a01cbfe"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "cdd7676d80e2b452b3dc177686afd34f2efe9e21a28cdeba7e74ce79410c3d97"
+        }
+      ]
+    },
+    {
+      "bom-ref": "43a98fd737f84c44",
+      "type": "file",
+      "name": "/usr/bin/ssl_client",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "4f4cca14455170836de5dec52ab32afd62ac19a3"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "51bc20da3df12520921587b8ab7746a876cc008d09799c61b1191fbab8306156"
+        }
+      ]
+    },
+    {
+      "bom-ref": "43f3ffa84b633e81",
+      "type": "file",
+      "name": "/usr/lib/engines-3/afalg.so",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "5297478fac9c750a99155148d78fb060e8ca1a3d"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "af05d7bce5d3ede5893d673afdb5b37e5b4cd18343fe9d715ece6788c91ce019"
+        }
+      ]
+    },
+    {
+      "bom-ref": "f8001e4a57e2b4dd",
+      "type": "file",
+      "name": "/usr/lib/engines-3/capi.so",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "b73b62b7607f6d6bc4ff78494f188ff93c2f2c67"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "17eecc23f04d8b096cbb3e746ba24c685de206b70c2ece8ade222e69a45fd6d5"
+        }
+      ]
+    },
+    {
+      "bom-ref": "b6661310849157a7",
+      "type": "file",
+      "name": "/usr/lib/engines-3/loader_attic.so",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "efcb65d884db56b9bf7e20c602a35665cce7ca13"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "90c43f4602eee3366e59ec24226c85b0f9d148d6fc9784b75a35f59c4fb7ade5"
+        }
+      ]
+    },
+    {
+      "bom-ref": "0ec2fefa674f8ed3",
+      "type": "file",
+      "name": "/usr/lib/engines-3/padlock.so",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "351f674d1827e139441bb49f9664048a295aeafa"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "b7b46abe19d66d675e475d7c852439b8ed6fd7c0d8fbc5595ccc9885f9ce8222"
+        }
+      ]
+    },
+    {
+      "bom-ref": "933b506d91ea1cfd",
+      "type": "file",
+      "name": "/usr/lib/libapk.so.2.14.9",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "9d6049b62c44150ed18b533da7c01d542f5cfe14"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "d067dadeb5a994781150d2728ec486249d1ac5bd9244e9bec0c947a14d09c60d"
+        }
+      ]
+    },
+    {
+      "bom-ref": "f3440db7f1d1a2a0",
+      "type": "file",
+      "name": "/usr/lib/libcrypto.so.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "80688f0361101713b2d088eff04bf534836b0861"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "524aa6522db24a99b59a730102a5242a28a65cba66c6003051f712790530acbd"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cfb6036e868d6817",
+      "type": "file",
+      "name": "/usr/lib/libssl.so.3",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "8b4cf207cdf2c092818091153cb049c3154f498a"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "c8b6d196b5aba866960438eb4c3d74612e8925ba90fbf15a6ce89013a1ce519a"
+        }
+      ]
+    },
+    {
+      "bom-ref": "26e880586ec20625",
+      "type": "file",
+      "name": "/usr/lib/libz.so.1.3.1",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "0568e6cdda084e370817a815056392f4bbcfa9c2"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "09b1bbd6ffe274039cefaca595f55cec0af65fe90d9e285e5d57ff7ed96948d2"
+        }
+      ]
+    },
+    {
+      "bom-ref": "07385ee2a6f7df41",
+      "type": "file",
+      "name": "/usr/lib/os-release",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "353c64fd2e674e92ebea9893aaac3b9f23bcf4a1"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "b836523e60eaa2eb7e4799ca77e9d34c910f100207455ab2cf32f09a5fc8271a"
+        }
+      ]
+    },
+    {
+      "bom-ref": "6ef82f9c84433e22",
+      "type": "file",
+      "name": "/usr/lib/ossl-modules/legacy.so",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "214a7d6b89c900593e5120fa05bed5eec74b8c01"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "7e2d390d13cc144edb013243d34f9f48ffc83b42c921aff1bf74ac8cc8205563"
+        }
+      ]
+    },
+    {
+      "bom-ref": "50bc96437a55b724",
+      "type": "file",
+      "name": "/usr/lib/sysctl.d/00-alpine.conf",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "1e9125cd6d7112098a7c446d4f2ee8a269a7aba7"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "ee169bea2cb6859420b55ca7a9c23fb68b50adc1d26c951f904dec9e8f767380"
+        }
+      ]
+    },
+    {
+      "bom-ref": "26404c7b657b313f",
+      "type": "file",
+      "name": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-4a6a0840.rsa.pub",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3af08548ef78cfdedcf349880c2c6a1a48763a0e"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "9c102bcc376af1498d549b77bdbfa815ae86faa1d2d82f040e616b18ef2df2d4"
+        }
+      ]
+    },
+    {
+      "bom-ref": "a805b9f46a34dbcf",
+      "type": "file",
+      "name": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-5243ef4b.rsa.pub",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "bfb616658cc05a872568b0c8e398c482e23b60dd"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "ebf31683b56410ecc4c00acd9f6e2839e237a3b62b5ae7ef686705c7ba0396a9"
+        }
+      ]
+    },
+    {
+      "bom-ref": "9cb489fd56affe00",
+      "type": "file",
+      "name": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-524d27bb.rsa.pub",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "053a92f87fd4532850bb31f0881978efe0532ae5"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "1bb2a846c0ea4ca9d0e7862f970863857fc33c32f5506098c636a62a726a847b"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cc83fe1485449e75",
+      "type": "file",
+      "name": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-5261cecb.rsa.pub",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3671ae0ec7503b1e193587c1dcdf7b78bc863e42"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "12f899e55a7691225603d6fb3324940fc51cd7f133e7ead788663c2b7eecb00c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "95cf8dc85e2cb8f0",
+      "type": "file",
+      "name": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-58199dcc.rsa.pub",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "39ac5d72c6ba018a0f74b8b453894edc9db07b5f"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "73867d92083f2f8ab899a26ccda7ef63dfaa0032a938620eda605558958a8041"
+        }
+      ]
+    },
+    {
+      "bom-ref": "f24013271948668c",
+      "type": "file",
+      "name": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-58cbb476.rsa.pub",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "c8fabeb2eeb992c368c77b9707e0d1ecfd7cf905"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "9a4cd858d9710963848e6d5f555325dc199d1c952b01cf6e64da2c15deedbd97"
+        }
+      ]
+    },
+    {
+      "bom-ref": "fa69c69a629a34bb",
+      "type": "file",
+      "name": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-58e4f17d.rsa.pub",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "329643357d0b78b1ef48ec155325e25f1d7534dd"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "780b3ed41786772cbc7b68136546fa3f897f28a23b30c72dde6225319c44cfff"
+        }
+      ]
+    },
+    {
+      "bom-ref": "2e67c40a830d3262",
+      "type": "file",
+      "name": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-5e69ca50.rsa.pub",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "825090fde25bbc0e71a9cb3076316b5afe459e4d"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "59c01c57b446633249f67c04b115dd6787f4378f183dff2bbf65406df93f176d"
+        }
+      ]
+    },
+    {
+      "bom-ref": "085da59792f5ee15",
+      "type": "file",
+      "name": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-60ac2099.rsa.pub",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "5d4743128353b6396fad2fa2ba793ace21602295"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "db0b49163f07ffba64a5ca198bcf1688610b0bd1f0d8d5afeaf78559d73f2278"
+        }
+      ]
+    },
+    {
+      "bom-ref": "9a49bc62472e8893",
+      "type": "file",
+      "name": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-6165ee59.rsa.pub",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "95995311236b7a55933642ffa10ce6014f1af7d0"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "207e4696d3c05f7cb05966aee557307151f1f00217af4143c1bcaf33b8df733f"
+        }
+      ]
+    },
+    {
+      "bom-ref": "2c2368dc7f5bda0e",
+      "type": "file",
+      "name": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-61666e3f.rsa.pub",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "58d5ba4b2f3b1e927721d7a6432f298eedf72a6b"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "128d34d4aec39b0daedea8163cd8dc24dff36fd3d848630ab97eeb1d3084bbb3"
+        }
+      ]
+    },
+    {
+      "bom-ref": "32b9ad08777d0a17",
+      "type": "file",
+      "name": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616a9724.rsa.pub",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "23d0f2ea1af269c2f66165e0f8a944e96bf011de"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "10877cce0a935e46ad88cb79e174a2491680508eccda08e92bf04fb9bf37fbc1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "81502d8c056f85dc",
+      "type": "file",
+      "name": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616abc23.rsa.pub",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3529ec82670c6d4e20ee3e4968db34b551e91d50"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "4a095a9daca86da496a3cd9adcd95ee2197fdbeb84638656d469f05a4d740751"
+        }
+      ]
+    },
+    {
+      "bom-ref": "a42bfe9ad3269ccc",
+      "type": "file",
+      "name": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616ac3bc.rsa.pub",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "55a301064e11c6fe9ba0f2ca17e234f3943ccb61"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "0caf5662fde45616d88cfd7021b7bda269a2fcaf311e51c48945a967a609ec0b"
+        }
+      ]
+    },
+    {
+      "bom-ref": "861d33dbdb73680a",
+      "type": "file",
+      "name": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616adfeb.rsa.pub",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "de1241307014aae3dba798e900f163408d98d6f4"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "ebe717d228555aa58133c202314a451f81e71f174781fd7ff8d8970d6cfa60da"
+        }
+      ]
+    },
+    {
+      "bom-ref": "282c80e94c149788",
+      "type": "file",
+      "name": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616ae350.rsa.pub",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "57f6b93fda4a4496fab62844ddef0eeb168f80b5"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "d11f6b21c61b4274e182eb888883a8ba8acdbf820dcc7a6d82a7d9fc2fd2836d"
+        }
+      ]
+    },
+    {
+      "bom-ref": "b15c4eaaf1c4ccab",
+      "type": "file",
+      "name": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-616db30d.rsa.pub",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "df02c9adc2906a3aa5e5ad69f50e3953e65710d0"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "40a216cbd163f22e5f16a9e0929de7cde221b9cbae8e36aa368b1e128afe0a31"
+        }
+      ]
+    },
+    {
+      "bom-ref": "1f0318579f702e5d",
+      "type": "file",
+      "name": "/usr/share/apk/keys/alpine-devel@lists.alpinelinux.org-66ba20fe.rsa.pub",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "7bd0eee2d55893735686932aa47a7c8a66e9153b"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "7cf4cb8314e6ccc985b0d7f1aa0c6e0a81e3588f69a41f383af7a63d1ba61793"
+        }
+      ]
+    },
+    {
+      "bom-ref": "9dbb6ce73a9152e0",
+      "type": "file",
+      "name": "/usr/share/udhcpc/default.script",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "569e3f354139f964b3364c59276ffe0016ee33d9"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "1cf94e3918ce389c722f4408490ae7334321a5ca2aec2c945b0c47662aa274a6"
+        }
+      ]
+    },
+    {
+      "bom-ref": "05c0c675e48bc4e6",
+      "type": "file",
+      "name": "/etc/apk/protected_paths.d/ca-certificates.list",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "e59d12af5a3b7fb4dc8431d67166205bbce2f095"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "12b7757abe81b698cf5a57827edfc214971f7c4025720ec5745475f9f8dd7697"
+        }
+      ]
+    },
+    {
+      "bom-ref": "42879528c1576b30",
+      "type": "file",
+      "name": "/etc/ca-certificates.conf",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "93213d64722c20a2301e1d84cc67e33e95747447"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "65281ec413d1c4bbc86ba64c453612c6b70e4937e2040584d499e704ceb060f6"
+        }
+      ]
+    },
+    {
+      "bom-ref": "355aedc8c36a1418",
+      "type": "file",
+      "name": "/etc/ca-certificates/update.d/certhash",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "a713d2597d35a5f385e861032b83165805c5fc62"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "dcdcc8690bcb948d9cf90da1f3e6c504273bd13d560edc7482f141ff17acd76a"
+        }
+      ]
+    },
+    {
+      "bom-ref": "3855be2dfd857fea",
+      "type": "file",
+      "name": "/etc/ssl/certs/ca-certificates.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "dd70c9014a8f7562ed897f1e829b6a47cc3a80ac"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "657ca6ba4bc43138f89de75fb63794cbfaa897e0e110b069fd1367bd66a5bb6c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "fbfbd131adb5f943",
+      "type": "file",
+      "name": "/lib/apk/db/installed",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "ea8dba8c2655e89a1ad7c334cfdc5ea98bbc8216"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "d5721e2ec91ae76ac542ca16cc09d47c91d53f1b976a09cc965f2a9f6a98e686"
+        }
+      ]
+    },
+    {
+      "bom-ref": "1d5da511d214ae4e",
+      "type": "file",
+      "name": "/usr/bin/c_rehash",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "2083fe85b7cfe0437b25ed3f97e2d09c9767069f"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "e63b0d19aa2a69a1893bdcfadeaac177dd4c225a3e9fdc820ecad57c972c2442"
+        }
+      ]
+    },
+    {
+      "bom-ref": "8f5e0479e3ae6240",
+      "type": "file",
+      "name": "/usr/sbin/update-ca-certificates",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "41acc396efac41fab7a9024972bb8d073161b7a4"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "050485bc9c4a976e6aa6c97ee31372c7442d4a2b5fb6ab78edd227852da04d5b"
+        }
+      ]
+    },
+    {
+      "bom-ref": "c7414f040428e981",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/ACCVRAIZ1.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "620fa298774c61bc147e4766753252267a4d9c9d"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "04846f73d9d0421c60076fd02bad7f0a81a3f11a028d653b0de53290e41dcead"
+        }
+      ]
+    },
+    {
+      "bom-ref": "2e5e2a5b97c606cb",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/AC_RAIZ_FNMT-RCM.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "ceb43c8ebea65e461729f071ad2f4ef62a831ba1"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "aa18ea4c9a8441a461bb436a1c90beb994ac841980b8fd62c72de9a62ddf8ae3"
+        }
+      ]
+    },
+    {
+      "bom-ref": "1b6018aa710e119c",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/AC_RAIZ_FNMT-RCM_SERVIDORES_SEGUROS.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "4f6fa356c7ad3ab1ddee68e9d4a43d76aebed253"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "8e3f237813d3f3e2f5767bc2a694a7557f84bb79fd60ef1adc25afd0c1fc5ef6"
+        }
+      ]
+    },
+    {
+      "bom-ref": "7cbca0cb2716e7a3",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/ANF_Secure_Server_Root_CA.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "86c697b354c67874c5fffdadca5d70896d23730c"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "efb2df6e0075fa74e448077e402d171851b2ffe4668a614adc00dcbc75633afd"
+        }
+      ]
+    },
+    {
+      "bom-ref": "b90042b5075d7e16",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/Actalis_Authentication_Root_CA.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "511ca95607022a99ed8e68bd63f136c4854cefcb"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "c6d25347727f267774611677588d76f8a54a6e14d3e99dd69ef2c20612ed87c5"
+        }
+      ]
+    },
+    {
+      "bom-ref": "17f3ff6d624ff9dd",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/AffirmTrust_Commercial.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "31629611efda355cdc62783bd61e91aa0ba20aa6"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "7108110fdaf19e3e5a7ed8fa38557248e79fe78bb2e9eefe7a0bb801cbfd2db7"
+        }
+      ]
+    },
+    {
+      "bom-ref": "faaac9307875b141",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/AffirmTrust_Networking.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "87a9857563967d59ccbe51e4a8fc2ba2fda1e919"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "b68109f50ba0abed3b938afebd2ab42a2f5089062c59e9fc74425e2742d894bc"
+        }
+      ]
+    },
+    {
+      "bom-ref": "be99b898f9d978ce",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/AffirmTrust_Premium.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "2a47bba1a7198f3b61b179239dadc8b6d9555887"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "94c88202bf2c13c68b90d124f93f62374f36776b0bfbc110c6d06f829290b580"
+        }
+      ]
+    },
+    {
+      "bom-ref": "794b62937302e02e",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/AffirmTrust_Premium_ECC.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "4078832c8e87e1552a61d2f27e38917f143c8919"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "42f0e946149ae0e0c6a1fb0e33150ce863479b2ef7b3c700161102ad1dcb34c1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "4eb1f5f2e7bccd56",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/Amazon_Root_CA_1.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "f0d2d251ef5ee84b8e05d8012056a1495fcf34b3"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "2c43952ee9e000ff2acc4e2ed0897c0a72ad5fa72c3d934e81741cbd54f05bd1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "3482fa1d3b17dd39",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/Amazon_Root_CA_2.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "323b7b4a10c0d8da198a3e8c059c9bec24f4932d"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "a3a7fe25439d9a9b50f60af43684444d798a4c869305bf615881e5c84a44c1a2"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e6bed2eed8a941b4",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/Amazon_Root_CA_3.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "2e7153a81fb98a0fbb508b3b93829e4e9eda5d23"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "3eb7c3258f4af9222033dc1bb3dd2c7cfa0982b98e39fb8e9dc095cfeb38126c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "5a831b7116d888e7",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/Amazon_Root_CA_4.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d9ac8e9773360d16d95225747626873e81aa9fd6"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "b0b7961120481e33670315b2f843e643c42f693c7a1010eb9555e06ddc730214"
+        }
+      ]
+    },
+    {
+      "bom-ref": "6e31588dd943ab7c",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/Atos_TrustedRoot_2011.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3e7bf149a7cd32271ef18328a22c766bdb192c76"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "79e9f88ab505186e36f440c88bc37e103e1a9369a0ebe382c4a04bd70b91c027"
+        }
+      ]
+    },
+    {
+      "bom-ref": "8193044b8041cdeb",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/Atos_TrustedRoot_Root_CA_ECC_TLS_2021.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "21d7491620f569f125ea6750fbc51e0d68865eaf"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "970d70366b2f8c29ac71c8f71689ddd8fd321208a5ededbb2d784af33799a0f6"
+        }
+      ]
+    },
+    {
+      "bom-ref": "f5e539519c4b60d2",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/Atos_TrustedRoot_Root_CA_RSA_TLS_2021.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "8943e4a8481b0339e69f0e7cd54c324eb3cbb03f"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "980dc408dd2def2d7930bec10c48e256d115f636c403b631ffb93558dacf5571"
+        }
+      ]
+    },
+    {
+      "bom-ref": "0a6d1854ba689e6a",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/Autoridad_de_Certificacion_Firmaprofesional_CIF_A62634068.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0cd024f9827c0b9834235e9517e932ce76009a0"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "a618213c5dd7cbb59b3154de7241d7255333a0619cf434329becae876ce6e331"
+        }
+      ]
+    },
+    {
+      "bom-ref": "c2464b47013389ad",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/BJCA_Global_Root_CA1.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "22841f1345277d606ed6dd3c42565e0ca907cc76"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "08e1a8115accf7ce400a3f98fc31dbab522a3ed3644ca48389b4899e2d794f1a"
+        }
+      ]
+    },
+    {
+      "bom-ref": "6a5b11556cf77574",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/BJCA_Global_Root_CA2.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "ba8137e853314ecd084532bfa3e5d63c79a3ec29"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "6c58125f88a4ff83d40e6b58c5532ea905be4daf1ec7da7f4542af3d34855340"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cf4de185a8a6fa71",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/Buypass_Class_2_Root_CA.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "0a3e41e74e9a4137036525f0c2fd6d8edfdc7c39"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "9c2a7510e01aec2c9b8cc2c9d03b16576858a93863a6d0a31a2ac05f47f5dbe1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "df1793559737e133",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/Buypass_Class_3_Root_CA.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "5b889430b7dd1517c94f87b77175c5af957b15a4"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "8db5b7c8f058c56a8d033c2443d34fdfd3656150eaa73fe63c65161e7063ce99"
+        }
+      ]
+    },
+    {
+      "bom-ref": "69a81fc4008d9e4b",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/CA_Disig_Root_R2.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "71a23868abee32d53d2573dc73b82e0b77d76fb8"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "8adefca890c92e6d0877fdcba07655296852217da657026aea69ee547642528c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "f5b5f4b60e6a3818",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/CFCA_EV_ROOT.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "96828202bc5c8db6f4f56b4d81a2553c108ce23a"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "94e4ab21333740d7ed0f2b5007744e5cf6792c0ddf4c6bdfb3ce8333010e7306"
+        }
+      ]
+    },
+    {
+      "bom-ref": "6fa427c81137602a",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/COMODO_Certification_Authority.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "b4b9dc9cf470c66b1e9e53c3029a07a941898185"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "e273097c7c57cb7cbb908057991ae1774d4e1e8c6a062fb6be9e6645b32fb431"
+        }
+      ]
+    },
+    {
+      "bom-ref": "deb98bcf15f90fe0",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/COMODO_ECC_Certification_Authority.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "e99968bdee964aeabd2f025ccabe1d1085b2f88c"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "d69f7b57250536f57ffba92cffe82a8bbcb16e03a9a2607ec967f362ce83f9ce"
+        }
+      ]
+    },
+    {
+      "bom-ref": "3f8e5941f7cfbdcb",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/COMODO_RSA_Certification_Authority.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "f406946f4a9b379d4af9847451ca01dc40cfb968"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "24b0d4292dacb02efc38542838e378bc35f040dcd21bebfddbc82dc7feb2876d"
+        }
+      ]
+    },
+    {
+      "bom-ref": "bf2b484e4f7245ff",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/Certainly_Root_E1.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "bcbe678ccaafd4dafae76ff27858163acdad7d0a"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "1b28a5568648fef0d3faeb916cb7bdb054724cb3b5a00c6bfd3d8a2fba7a8bba"
+        }
+      ]
+    },
+    {
+      "bom-ref": "de69e34e47f1b68a",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/Certainly_Root_R1.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "f2a61f2c7fcc32cf79611fdc2e1a1a774922dfc7"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "0c78902126532fde9eed4b2d8b6a2c9bbaa8b3abc59f233c45c6cb5514a9f808"
+        }
+      ]
+    },
+    {
+      "bom-ref": "27a16c21c5dfc978",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/Certigna.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "fe5df407c4cba70f49928410bf55df03d1e2732f"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "d1e1969cdbc656bb4c568116fe2d9b4f8b02b170dc20193b86a26c046f4b35a7"
+        }
+      ]
+    },
+    {
+      "bom-ref": "adc6807a742f3067",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/Certigna_Root_CA.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "55d0638baee7a6144b8e3c028c24ee1127202c3c"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "fe3b44c18182e167121a2c645cecc4817441d469dc00633e60fe8476f9e1ad96"
+        }
+      ]
+    },
+    {
+      "bom-ref": "3be4533de91d404e",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/Certum_EC-384_CA.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "22dbd35fe494149e558aa745ec3114396ce7788a"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "c4a426fe57a7e4e6966e2103f2941eb7263e7c35727dd0f412bd593467304999"
+        }
+      ]
+    },
+    {
+      "bom-ref": "0ea995e9ffdd88d8",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/Certum_Trusted_Network_CA.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "76c3afd5eaf8d5cbf250f08b923fbf9085c6793e"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "43f1bade6454349c258017cc99113f8b6a5712e3807e82ad9371348d52d60190"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e035a392a310408d",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/Certum_Trusted_Network_CA_2.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "164db231827f86d73012dc6680fb6be777f205ac"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "9dd4cbb6d2c29cbb3ca98da02c042a690c0ef4c0521d98aae37e0a704c4bf210"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d1992ad5119e5f1d",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/Certum_Trusted_Root_CA.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "224c9274d5af21d3cee7eb1b143d471be19e1b4d"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "e6c62d3f63ba03f4dac458b7dac6c09eb4d71cc3c6621769c3883ed51677c01c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "3f1164517263bca9",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/CommScope_Public_Trust_ECC_Root-01.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "37575d65f82284bd61f2bfce0820c8c3a7da69a3"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "a5e66a87e60e17b9aac2d825c9b898ce4bb635dd6e8a137c0dd2ca761b6165ce"
+        }
+      ]
+    },
+    {
+      "bom-ref": "a9d4e03117074b92",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/CommScope_Public_Trust_ECC_Root-02.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "bbdb4d47a7949fa7542f754f329b7602064fff8c"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "80eda3bc1316bbb2c18df887c7a30a40ace97146471337e06bfdd46337a688c3"
+        }
+      ]
+    },
+    {
+      "bom-ref": "ef140c38242caf69",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/CommScope_Public_Trust_RSA_Root-01.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "e6d40ed9e062ff5e9fc2c14c5a5dff81fea212f3"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "ee459c64139faa1fb8d90a9195022aaca51808c62bb374afa2a26b50875346b1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "39230fd1c7df2dd9",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/CommScope_Public_Trust_RSA_Root-02.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "749aa8aa41aa221ac66106efb8d60e0705945fb1"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "fed2654034ede8dc7677c5e06d4b583bcb0ae352f03cd16111d34c854bbffbbc"
+        }
+      ]
+    },
+    {
+      "bom-ref": "7aefb4f7879c3c78",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/D-TRUST_BR_Root_CA_1_2020.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "90be8e8f64cca12962624e98b8d9174373ee0e89"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "ae927c01e73470cfc89943b5cd8f26e481d55c833517c1017f3fef404a38a317"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cd65956cda2fe203",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/D-TRUST_BR_Root_CA_2_2023.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "0071016c046d1407424d80aa71c640a0e3d3db17"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "2754e50d3377d6613e95df6d7a40150bb3a1fa1ae35382af96c7be58cdcbeb14"
+        }
+      ]
+    },
+    {
+      "bom-ref": "6355cdd03cff6cbf",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/D-TRUST_EV_Root_CA_1_2020.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "9751a120d60bb07072c400729f0245903faab22b"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "0b83e3ece7c33128cc31ac97595ce1bdb524db3f924623093b64e6a96ffb4b9b"
+        }
+      ]
+    },
+    {
+      "bom-ref": "8ae021e3934337d2",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/D-TRUST_EV_Root_CA_2_2023.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "59f7fa35fd3098f51913b9213729a30e92964735"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "268e32f39fb4f9316d0680fde4eb479bbe8c4093193551c4b388f703ada60eca"
+        }
+      ]
+    },
+    {
+      "bom-ref": "64af67d77d567000",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/D-TRUST_Root_Class_3_CA_2_2009.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "0955eda0b9f35d8915cfc5decba0fdeffa307a15"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "a00b8aa918457f5e7e58457b5e2f80d640fa77cc290572aaab1ae7b4734a9528"
+        }
+      ]
+    },
+    {
+      "bom-ref": "accc309f00ca48fc",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/D-TRUST_Root_Class_3_CA_2_EV_2009.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "9b3af04c571ba2783543c5ab5193aa279398fa76"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "f81ceeaf6341513ef391ab3ea3302e8b2fb2c1527752797bba9b20ca22048b3c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "5d949250e7371ab5",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/DigiCert_Assured_ID_Root_CA.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d636a2396e29b4e91e00106a183938a6d746f716"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "b52fae9cd8dcf49285f0337cd815deca13fedd31f653bf07f61579451517e18c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "9cbc5ac3bf7ab57b",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/DigiCert_Assured_ID_Root_G2.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "9662d04625b183655fdb0304f644865a28a2af7c"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "660b5aa96668c5162f4af6b0a01241d8527aef8fa8a5307a7033b83c3de4a72d"
+        }
+      ]
+    },
+    {
+      "bom-ref": "0c221ae8a1af93eb",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/DigiCert_Assured_ID_Root_G3.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "07683ac24e071f61794b8ef1d77fa9096b8d6a90"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "c4fa4cc30be6aee0a4c0dff81f28768eedd83e8d4934a42f82179cbfa61f13ad"
+        }
+      ]
+    },
+    {
+      "bom-ref": "bdba8809b78738ed",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/DigiCert_Global_Root_CA.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "4418290c0af661843b28c70f4eb728f4cc462960"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "39fdcf28aeffe08d03251fccaf645e3c5de19fa4ebbafc89b4ede2a422148bab"
+        }
+      ]
+    },
+    {
+      "bom-ref": "de1d90f1a8b42164",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/DigiCert_Global_Root_G2.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "bcd60f07008eed3bd1d16a974fff0b93ce68110b"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "5d550643b6400d4341550a9b14aedd0b4fac33ae5deb7d8247b6b4f799c13306"
+        }
+      ]
+    },
+    {
+      "bom-ref": "a30c2cca3ac226f4",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/DigiCert_Global_Root_G3.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "ee09b75a1fb80f76354f45dace36fa5174d96bb0"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "1914cd2d4cde263315f9e32c7683fc0e1b921919ad12b256d49bf782011c03cc"
+        }
+      ]
+    },
+    {
+      "bom-ref": "0b5744b4e231cf2d",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/DigiCert_High_Assurance_EV_Root_CA.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "ff242a82d695ca1e476ec5a465cb44f0747edb58"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "d98f681c3a7dce812b90bf7c68046827f3bf5607357f1e4918c5dc813b359bf1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "9e660b61a979ef01",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/DigiCert_TLS_ECC_P384_Root_G5.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "02326c81a98c8914ec59c4be2817b6f2177e8033"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "05161ad2ac04a0df956ef803e127aa877cc5131e0a727ed8e5de43f02e8868c4"
+        }
+      ]
+    },
+    {
+      "bom-ref": "da0a279841405ebc",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/DigiCert_TLS_RSA4096_Root_G5.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "b6c7cf76bffe105afc7255951b70fa1b140c452e"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "fe64d4b3ae749db5ec57b04ed9203c748fff446f57b9665fad988435d89c9e43"
+        }
+      ]
+    },
+    {
+      "bom-ref": "36083378359d8286",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/DigiCert_Trusted_Root_G4.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "e18e58c72171c631853f21ddeeef0f3eddff113c"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "ce7d6b44f5d510391be98c8d76b18709400a30cd87659bfebe1c6f97ff5181ee"
+        }
+      ]
+    },
+    {
+      "bom-ref": "ba01e5468bc59633",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/Entrust_Root_Certification_Authority.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "84c2702946b6895ac09e25fc4eccd685129a2e27"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "745bd29be45667514b4000e9cdb70cdecad0f02c78232ed722f64f7f80436e35"
+        }
+      ]
+    },
+    {
+      "bom-ref": "ebb05d2fbca51a52",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/Entrust_Root_Certification_Authority_-_EC1.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "bec0efa7b5d94664b6427d0bdc22e77ae6ed1d6b"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "a0d7e56b32b767e076bd7d05ce1779dbe3656d0a02a9abe711fc79640b9f7fbe"
+        }
+      ]
+    },
+    {
+      "bom-ref": "5587eed7a6caa826",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/Entrust_Root_Certification_Authority_-_G2.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "6030dacb6bb4c3acd58b528313a6b417cddbcdb8"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "646db48fa7794bcab4581f264ff3fad4cff7bbd24f5e8bb170d4f602b6caf828"
+        }
+      ]
+    },
+    {
+      "bom-ref": "fa113187bae76e5d",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/FIRMAPROFESIONAL_CA_ROOT-A_WEB.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "e5f6f17a920cdad0d8c904f0705f94e58964e7e6"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "9f9228cfb1ba0c6c9cd1c7b35437272b5fad8259e5205e6af57ab50edeb22e2d"
+        }
+      ]
+    },
+    {
+      "bom-ref": "12233898cf17a304",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/GDCA_TrustAUTH_R5_ROOT.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "276ef0193f9ff2a5ee437acaa4069c8d4c41851e"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "b0bf3a444f89d8be7db120bfecaa2f94d9e49ede21f680d674c1e8d839d8a9a2"
+        }
+      ]
+    },
+    {
+      "bom-ref": "c7c2371e0c1bddf4",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/GLOBALTRUST_2020.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "4996eba7b2b212547bffe74e8cf38cb9e03411b6"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "b3bcd05e1b177130f6888fcc1cff4e01cff44ef8e6b0d035f04ad6a71dd0879c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "105bbc1cd8912960",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/GTS_Root_R1.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "5aab042e2987dbf2849f05194800ee162c6a5fd7"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "4195ea007a7ef8d3e2d338e8d9ff0083198e36bfa025442ddf41bb5213904fc2"
+        }
+      ]
+    },
+    {
+      "bom-ref": "0109284ce8254a8b",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/GTS_Root_R2.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "299af0bfcb2f6fde42b5cb1eaf9d6c07a44e9b14"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "1a49076630e489e4b1056804fb6c768397a9de52b236609aaf6ec5b94ce508ec"
+        }
+      ]
+    },
+    {
+      "bom-ref": "948bff27b705e403",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/GTS_Root_R3.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "953c8337aa79ca983beabb59e85a75a7f35f310e"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "39238e09bb7d30e39fbf87746ceac206f7ec206cff3d73c743e3f818ca2ec54f"
+        }
+      ]
+    },
+    {
+      "bom-ref": "fd0f856590bc92bf",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/GTS_Root_R4.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "54b519a7faeeae1f2d777d3fa2ce998d6a31d9ac"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "7e8b80d078d3dd77d3ed2108dd2b33412c12d7d72cb0965741c70708691776a2"
+        }
+      ]
+    },
+    {
+      "bom-ref": "f89c702169fda266",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/GlobalSign_ECC_Root_CA_-_R4.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d62a5e3304792e3f8c9f9bd5eaa74cf3a4b37961"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "d1b69887f73444c0fc0a6f22a2fe961c2423275f9c38ba7d50da2a4ba75394f1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d236d542474b2ac2",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/GlobalSign_ECC_Root_CA_-_R5.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "b5303a6a94db2ee51ce9b07ce05700a6839c4d0c"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "80eeafa5039f282345129a81ace7e1c1e1d4fd826f1eb3391a4ea56f38a6e3d8"
+        }
+      ]
+    },
+    {
+      "bom-ref": "799338f8a4b875a5",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/GlobalSign_Root_CA_-_R3.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "1b094f057de5fa44d7958268d93ed5f4d6c5dbdc"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "6bdc59f897631af7811e3201cbc58e5999de2600ae8667454a34514eecfd8381"
+        }
+      ]
+    },
+    {
+      "bom-ref": "870e672652e194b5",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/GlobalSign_Root_CA_-_R6.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "a5f84689d3eeeb0c0cf67dd0bcfa7e873b3553b3"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "5ff8425be71c1805446bf10601ce3cb9619889866766fc9285583ca5a4a7de94"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e9d84ec330991f80",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/GlobalSign_Root_E46.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "00097313addec897465681955d57c936f62fc8c3"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "5bd16128d0934629c2e1713140a6f97c9828dbb5429ab5797b2573efc71de1a1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "2638ab9b1f27743a",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/GlobalSign_Root_R46.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d72a96202dd7467dcffc0a7772ca7c4a8c4c1cbc"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "dcc1a6246e13880ca5b73ef547e082dd0401e4d8837b6d211be82f7be791ac65"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cc60ffad34129cbf",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/Go_Daddy_Root_Certificate_Authority_-_G2.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "760fbb36cfb55a67c71cac3dcf0d368ea9f98ee7"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "500329abac100a953a7396b54b36be57d333022f17401bc948248ea179cf1784"
+        }
+      ]
+    },
+    {
+      "bom-ref": "a8b6e5ea8a836409",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/HARICA_TLS_ECC_Root_CA_2021.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "7e50045e60b63c8690a29d8f434f9a740f926120"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "c6dc63e98b3a5e6a595c7d583a9c47c5efb6d316957466fd16c785b423eacf37"
+        }
+      ]
+    },
+    {
+      "bom-ref": "ca6d78af197ac454",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/HARICA_TLS_RSA_Root_CA_2021.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "a551003c7ed1fee9ad3015fbaa3139a856d28174"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "05e0ebf9643197ccf8036cdd86a2ee14292c2a077dbe06435ed30369b8762564"
+        }
+      ]
+    },
+    {
+      "bom-ref": "2d502c8053e040c9",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/Hellenic_Academic_and_Research_Institutions_ECC_RootCA_2015.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "fc2c55eb2428f256ff55b96c2123a828e98f1a66"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "1cdd90d42b48cced8f5ecbff087c49da56b224f0272e4b5074e63b82fff5fb16"
+        }
+      ]
+    },
+    {
+      "bom-ref": "5ea0804ffff1430d",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/Hellenic_Academic_and_Research_Institutions_RootCA_2015.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "22d9fe83302ff06ae25e6efb8cc1fa21dfaf0e72"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "677160e6297b48b87ede98ab7b4f2be55894491776f6191937ea397d01a6fb4b"
+        }
+      ]
+    },
+    {
+      "bom-ref": "ac14ff35e6e34d83",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/HiPKI_Root_CA_-_G1.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "f9c9b3d9baa557bf26ce840730a726c74aa721f9"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "c3f06f635f1939ebeb125e5c1f030e329b63dd808d3ce803b1b1794bc78b253a"
+        }
+      ]
+    },
+    {
+      "bom-ref": "1fcf3cc20c776c47",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/Hongkong_Post_Root_CA_3.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d5c78ce39f6d7ca7b589017ebb57a6da21fa8fca"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "1fd9801787f30a4ab835b1462afc3f71473a5eacc74c0a22ed392bc3da9362f3"
+        }
+      ]
+    },
+    {
+      "bom-ref": "00ed465fc66455c9",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/ISRG_Root_X1.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "4de9627fe9ace4acce27eaa1a0837cd3db55704b"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "22b557a27055b33606b6559f37703928d3e4ad79f110b407d04986e1843543d1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e8c6c3ad86975496",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/ISRG_Root_X2.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "bd49d42c1fbb733120cd260418ac892a6954d54c"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "a13d881e11fe6df181b53841f9fa738a2d7ca9ae7be3d53c866f722b4242b013"
+        }
+      ]
+    },
+    {
+      "bom-ref": "27cff77cda4b3db4",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/IdenTrust_Commercial_Root_CA_1.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "4fa701bf556b8d2fb78fa8f47643a212523f1a77"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "1d03b965511ce50d0a0bae1b549ed7048c783cfcba9aa40ea11d355b1889657c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "384e602fb8ccef51",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/IdenTrust_Public_Sector_Root_CA_1.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "b613bb3a6dcc2ee7ac62d0951e0ea9bcbd48ff8c"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "9b4282f5a402e19016c4874a52df3367eabccf05be851ad03039f777a602d30a"
+        }
+      ]
+    },
+    {
+      "bom-ref": "62667f8ce23ed6e4",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/Izenpe.com.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "19e6885c728173659551480ce51ddd2680c6805b"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "1d37341b099afc610bf4feb387096577a0dc61bb8fd09444f1a199a1b1b117e3"
+        }
+      ]
+    },
+    {
+      "bom-ref": "05df26de2f6b8f07",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/Microsec_e-Szigno_Root_CA_2009.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d8616f439458366e6a5a94d2c72713c0c8ffcd3b"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "4f670affee7b14140a6d20937db6e991102d5f8bac1d2562ebf20a1afda94d73"
+        }
+      ]
+    },
+    {
+      "bom-ref": "eacb6a36a6f7496e",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/Microsoft_ECC_Root_Certificate_Authority_2017.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "69d23ec7c71994b1b2ccbad0fda4c17db22541d2"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "b4ee8ed700b7abe4836d119c8113bc8b717f4f1568abd7edd81f2526c5836983"
+        }
+      ]
+    },
+    {
+      "bom-ref": "5f1d3a6fea1d8d99",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/Microsoft_RSA_Root_Certificate_Authority_2017.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "f644c114129ef405b4b513787f189e78f398f0e9"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "626d330f6a8944fa4245f02f9795668e25a40b29b4cc5206bee73337b7dcd4d5"
+        }
+      ]
+    },
+    {
+      "bom-ref": "fe7445fbea53ac41",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/NAVER_Global_Root_Certification_Authority.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3319083d34cb6e52c0df4d4cdbebfb065c6b8b4f"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "9848c94859f83e48defe0b25a0f4347480b56ea2bb3336fe6d4dcf00d0d6031d"
+        }
+      ]
+    },
+    {
+      "bom-ref": "f92a62807e1b6174",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/NetLock_Arany_=Class_Gold=_Főtanúsítvány.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3c1c0175e7f82dfa6aa6f6cc32aaed15ac50f42d"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "40f60f2e2f83fb6c63ddefeba7939a7852b2d468183ea939cc4dcac8fe4cc87d"
+        }
+      ]
+    },
+    {
+      "bom-ref": "867056084cb80578",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/OISTE_WISeKey_Global_Root_GB_CA.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "fce2c0dc059c1ad3ac93d416b6baaebb5e97b75f"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "2dc52d373089ff5173ac392a464746dd066aaa3b7d1b3494a473c96686666fce"
+        }
+      ]
+    },
+    {
+      "bom-ref": "c375c342ba907a50",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/OISTE_WISeKey_Global_Root_GC_CA.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "b3dcfd843dff566af4ef0a483e6579ffb512cc37"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "17b98c4d832e8349ecb55f1f90e41dfc7bcd9410d1e925ccd06612cd3b9b9a54"
+        }
+      ]
+    },
+    {
+      "bom-ref": "0071ffa42daa82ef",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/QuoVadis_Root_CA_1_G3.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "77445cf9c00088588d0e7c3306625389c30ff4be"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "4db45324410a01a7023b038e5da7d7274d3cfd392565c351cf3d297fd7664c73"
+        }
+      ]
+    },
+    {
+      "bom-ref": "5d1ef3230fa1dd9b",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/QuoVadis_Root_CA_2.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "1c8d7a40a564fb59ea180802042d8b82a8aeda38"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "8c4220477ed85355fa380466aa8f559106d8a39fc90d3e0c121749e19444064f"
+        }
+      ]
+    },
+    {
+      "bom-ref": "6d584574c24d3dc0",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/QuoVadis_Root_CA_2_G3.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "5f3fde19cf8ffc60385575b98975644b7b7ff031"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "825c67f5583131425c4e33275cc8e5c9dfd02cd190c6d71e1d335621e82965a8"
+        }
+      ]
+    },
+    {
+      "bom-ref": "4cd4b4800270fcae",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/QuoVadis_Root_CA_3.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "c85dd47ad4764e2aaf33e28b676fb5038c0568a8"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "a2ae0b4ec9d2a4c4e150756a3defabd15bcaa75ee2b599e722b27c6a2998d00b"
+        }
+      ]
+    },
+    {
+      "bom-ref": "c65c5bb19ece4665",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/QuoVadis_Root_CA_3_G3.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "7c769d9fdb4df4d743ac9db8fd263763e1e9e49e"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "198cfe560c191a800cbe923ceca0a4e4f3d5a0d7ff9316b47998765fdc0897be"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e226c1bb11634d92",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/SSL.com_EV_Root_Certification_Authority_ECC.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "c3d015aa3924c34077dbe7f578d6ce389b919d71"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "662d60a283f416d888ff18831009e2cba95c61377f648beeed91a3dea12ac286"
+        }
+      ]
+    },
+    {
+      "bom-ref": "fbe768c4cf8aef3c",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/SSL.com_EV_Root_Certification_Authority_RSA_R2.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "2c4144422efd3d778cf5f3c280724e612ed89b29"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "a0681f1a11d5c02760bcb68b61b0d332f6c197e239c4b30dc47f91a79a73282b"
+        }
+      ]
+    },
+    {
+      "bom-ref": "6275170fe0c12639",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/SSL.com_Root_Certification_Authority_ECC.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d0f278d2129baf0d1be707831136f5ce16dec98e"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "b68d02ce35bd02123cf5fcd329bdd33640214715dae0442a97782a4471e9b292"
+        }
+      ]
+    },
+    {
+      "bom-ref": "2eebc4470c89b287",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/SSL.com_Root_Certification_Authority_RSA.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "7bff96214a4f9251fe6af524ce5e9b2a4216144e"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "2e368debd3626ea9c5d94c582d80050a530b505aa77ba231eb13e4d208c36d67"
+        }
+      ]
+    },
+    {
+      "bom-ref": "6f54458726cca38a",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/SSL.com_TLS_ECC_Root_CA_2022.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "6c37f0f346f759c198895674e9ffc53193e2423d"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "cf03adad817ae999648c5182ac996fc0682aeda4329c783756aa1c5c3d92eff9"
+        }
+      ]
+    },
+    {
+      "bom-ref": "2ac9681b4461fb2c",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/SSL.com_TLS_RSA_Root_CA_2022.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "82fb99b1b29e3e21da6a144496831bf9ed5b250f"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "e1c93696d4de9125e49f6a12b97a1cbcf8ce7331bc8268f1fe7b6ab447cc14cf"
+        }
+      ]
+    },
+    {
+      "bom-ref": "00dba86b72ed30e8",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/SZAFIR_ROOT_CA2.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "03d3c9a01229ecce2908287bc53f5f8b2cfa36e2"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "cbe8a1eec737c93d1c1cc54e31421f81bf358aa43fbc1ac763d80ce61a17fce0"
+        }
+      ]
+    },
+    {
+      "bom-ref": "383f5a10a42fd5ab",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/Sectigo_Public_Server_Authentication_Root_E46.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "323c21e30628ec823ce32209214a1526cce65e22"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "808130157f570b7640069852c88e256738007811a64c3aa9a4c31038347dc19c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "528343969a5b1a0e",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/Sectigo_Public_Server_Authentication_Root_R46.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "fb39baf23f5d3ab1f981ec407992211a3d2518ba"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "7eaaf8c5047d5dbb4f3d7f173318ee936b09da4f0ceb5f3beb45c277480836eb"
+        }
+      ]
+    },
+    {
+      "bom-ref": "02ffe856c83ce6c9",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/SecureSign_Root_CA12.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "72f425a92ba7123ac007c3fc631b63e12bb745c4"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "74e98caeaa30bc2828e7610aef3fbbe845a715367011598b4bec5fa65d9af0db"
+        }
+      ]
+    },
+    {
+      "bom-ref": "02546c1576cba180",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/SecureSign_Root_CA14.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "63c5444db460856bd137353481114907fd2853b7"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "1ad476fd9bf167e89bf98f13e9aec59a03443cf6e3d6645b1210fb1e7c702f88"
+        }
+      ]
+    },
+    {
+      "bom-ref": "a5acbc105692f41a",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/SecureSign_Root_CA15.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "ff5f5d95c4a822783ba1041e2f90c2c24d534fae"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "6198c864eaffa477ee9cf9aa10b534f022230e3129f99168962dc06358b4c9af"
+        }
+      ]
+    },
+    {
+      "bom-ref": "50f59948e5699b51",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/SecureTrust_CA.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "627699850d19c89f6e0cb7494d77cb0c6c2b81ce"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "a3e70af2c4b48562b61fe858d9d30f073f2cf2136f2af01ab5a966673e70af4b"
+        }
+      ]
+    },
+    {
+      "bom-ref": "3602ddb6e46ec50b",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/Secure_Global_CA.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "86aed091506a5bd64805bd433054905c39a42c10"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "7ee52fb3a5afacd55a7a2e00f057f7f64776ea0d536036f54c57694961e25179"
+        }
+      ]
+    },
+    {
+      "bom-ref": "982347ca14337690",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/Security_Communication_ECC_RootCA1.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "375dabb1d954f8e0411289425ddf969da3bd6a7b"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "ef94d474067b306c482dfd066130f04855f50faecd461cee2964ce6c7260000e"
+        }
+      ]
+    },
+    {
+      "bom-ref": "f497a49b9f4eec37",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/Security_Communication_RootCA2.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "68510d0792e95592dcfe3ead230a58096cf4df7e"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "39ad3110b8f84821ca22cfbd995914f2149521d27ce576e743de6a00dc39d9db"
+        }
+      ]
+    },
+    {
+      "bom-ref": "471c69e9a9d707bc",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/Starfield_Root_Certificate_Authority_-_G2.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "6594be3a70dfaa9cbb9b486dbc6e0271647fb61a"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "ca3760ba63bf0a2c5dd0dc7fe897838cc58f12a386b4ee53d2065229848e96a3"
+        }
+      ]
+    },
+    {
+      "bom-ref": "859a4a4288ec8d7e",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/Starfield_Services_Root_Certificate_Authority_-_G2.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "29091b76a08e520486579e758ac6c4a09ea0fe0e"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "870f56d009d8aeb95b716b0e7b0020225d542c4b283b9ed896edf97428d6712e"
+        }
+      ]
+    },
+    {
+      "bom-ref": "b1fd499cb586f393",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/SwissSign_Gold_CA_-_G2.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "5bb45a16db10a4908960e5127689313fff442208"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "0ebb1a5d93b86ad9dcbd294413f272817fe3bb8ba46f4ec8192b3b805f2fa8ae"
+        }
+      ]
+    },
+    {
+      "bom-ref": "8b3e3b727796df1d",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/SwissSign_RSA_TLS_Root_CA_2022_-_1.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "ab11381efea715809db63b99349e38e036a027c0"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "d7a20d19e788235a092dcbd33831c59280ea01a9a7a7f663a8c41bf753df2c71"
+        }
+      ]
+    },
+    {
+      "bom-ref": "1ff244f806514733",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/T-TeleSec_GlobalRoot_Class_2.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "7f1b1e428ac6d2cce6ea3ee106cddd6d5686eeee"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "b30989fd9e45c74bf417df74d1da639d1f04d4fd0900be813a2d6a031a56c845"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e7106bca46167468",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/T-TeleSec_GlobalRoot_Class_3.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "2a83caf5351d413d44bff9b7ea3e06cf6240eee4"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "1cb130a113f4e8502517a679808a98bf076d59bdb223bfc61cd224b8e1abda49"
+        }
+      ]
+    },
+    {
+      "bom-ref": "7ce6e9a1cddca0d0",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/TUBITAK_Kamu_SM_SSL_Kok_Sertifikasi_-_Surum_1.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "205ecf6e40d8f9dc700b932ce6a3a26836994652"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "c6904218e180fbfb0ed91d81e892c2dd983c4a3404617cb36aeb3a434c3b9df0"
+        }
+      ]
+    },
+    {
+      "bom-ref": "00931389b2ce5a27",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/TWCA_CYBER_Root_CA.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "e6b4f879a7ed34e42b54d759a12fc9ba067fc9f6"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "68a5f526d2e08c363444536b22a8d4ebfff72d7810ba26dc47711bb6cbc39d50"
+        }
+      ]
+    },
+    {
+      "bom-ref": "fb0c6c44fdc39cd8",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/TWCA_Global_Root_CA.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "387f72838755cd50ba19d2fb29c1f03803776ed8"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "5dadc31b57074a3168d1df23bb8b6b920acae1d426bf2288fc2de53cdd571089"
+        }
+      ]
+    },
+    {
+      "bom-ref": "259d13a12c3aa819",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/TWCA_Root_Certification_Authority.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "60c33e855789106bf75a3c97696fdd2d58890467"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "b69a59344e58615a691fa9567d55ad6337f09b57647a389242cbf43716575559"
+        }
+      ]
+    },
+    {
+      "bom-ref": "b5b336d3e5ef5863",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/Telekom_Security_TLS_ECC_Root_2020.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "621ba40b628552f82543e4af88de8c084e0fd860"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "a5ea4e7d6673e4d8cebbcbee010cce2f97b720ed2691abb35a119227c5dc0135"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d9b59c3bc69fc573",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/Telekom_Security_TLS_RSA_Root_2023.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "7aef4f441e0bcb1c26731cebff6d3717b83577e8"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "899d7d6cc867b2bdf51250f88c9ab9e1e96aac5d59b51c93b3b0c69e96792b7c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e68acac181f15e63",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/TeliaSonera_Root_CA_v1.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "a2219a7fd0a77be7422a02049b8d27805c0250ba"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "303c346ece82ca4f6713ac176164285d0469f326b6f12a787e11f5d702529277"
+        }
+      ]
+    },
+    {
+      "bom-ref": "2f66dc8120238036",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/Telia_Root_CA_v2.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "049de12dad62e4a31318fe6b024a88b645830daa"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "bf3bd189c3dd33bc81635d60284461f0d937c2c1d51cc4d7851c13466419fcb0"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e0b13fb7a7a0f980",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/TrustAsia_Global_Root_CA_G3.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "629795d39048cd6b1935e43ef4f116e38914dad8"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "d729fda98d8a3bf0d657b93fe0f70e22437359ef0de4ac5b4abcf3ef3667613a"
+        }
+      ]
+    },
+    {
+      "bom-ref": "62840894734815e5",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/TrustAsia_Global_Root_CA_G4.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "50260e64112522593a87b32ec81c2a850b915878"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "fc9662ebcadeb2c0a804bdb6503d0c23976c638cf73ff95ffafd33ead680e73d"
+        }
+      ]
+    },
+    {
+      "bom-ref": "ae76d3ca638d2a22",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/TrustAsia_TLS_ECC_Root_CA.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "b7f6405d86b918a47392233b4050bad2a57cf9d3"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "4e68d469799a26c10aea3f2ff350af434033d4a2914ba6aaccc27a34fe24005e"
+        }
+      ]
+    },
+    {
+      "bom-ref": "f4ca22d3252c9742",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/TrustAsia_TLS_RSA_Root_CA.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "49d03150fceed000d89a6af305412d999e7b25ec"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "76ae2d0df1228b565cf3533a7c22d59fc3683f240ce7192201072260fc6f0e27"
+        }
+      ]
+    },
+    {
+      "bom-ref": "43b34a989649b63d",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/Trustwave_Global_Certification_Authority.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "8747f89bcc06ba119cac723e990ffdb2ead7a6ac"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "0c7ffc481084cad9ccd3402eba9401b0f5abea0917d985e9ce401c8efbad4b04"
+        }
+      ]
+    },
+    {
+      "bom-ref": "fafc94605195e791",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/Trustwave_Global_ECC_P256_Certification_Authority.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "a2ac2145ffcc590d436350abc22ea825f15e3b9f"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "f08c4d2b700f7cd5da4dc1b60f4c57090fdc692cde8a7221f35b70abb4cec363"
+        }
+      ]
+    },
+    {
+      "bom-ref": "22749a20ec88a186",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/Trustwave_Global_ECC_P384_Certification_Authority.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "364fbd20e4805c74239f70e46e8f4a3ecde50386"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "a83c5b6097b03509711c9cd8de59def7ecf99ed72b4076dc33f5b2e35545b3b3"
+        }
+      ]
+    },
+    {
+      "bom-ref": "9520727f156b0af2",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/TunTrust_Root_CA.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "9f7b67a59f43b598f0cfcb0cbf495358b8485b28"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "8a852f7182753cb0193299c6cb2b4a106b1c38a789217b5eb380d736c5cc0081"
+        }
+      ]
+    },
+    {
+      "bom-ref": "4490eb7d2dfae63a",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/UCA_Extended_Validation_Root.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "736c6d8fa36e3487b463b5c148dd6a0a8b39a99c"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "eaa3be600a842e5b603316ed14e9ae11a43003f68a8317f0f2c01a516da4e586"
+        }
+      ]
+    },
+    {
+      "bom-ref": "568ab2599ed2561f",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/UCA_Global_G2_Root.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "140c027384371f293098c5c93c9388d9fde22595"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "de2e7b1bc7a2aed4e5866d3655d1041206c27caf376ee81bfc4012e8225e0e7c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "6019b4769e925e04",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/USERTrust_ECC_Certification_Authority.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "d9ce0ff56c71bb4091388ea38e01d97565a7557f"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "08fb40ba4144166f6ae80c7ab60be23e97e5083836d45fa85a33a5d0bfec10f8"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e5595609c04df8e0",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/USERTrust_RSA_Certification_Authority.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "2f2380685be0ea8c1be1e1a8496ff9f220c4f61c"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "8a3dbcb92ab1c6277647fe2ab8536b5c982abbfdb1f1df5728e01b906aba953a"
+        }
+      ]
+    },
+    {
+      "bom-ref": "9ce4fc48bf0a9a7d",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/certSIGN_ROOT_CA.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "37268bb31073e1fb5d7e3221c203d27033886e72"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "cf339eae15268aff66148f3bcdf112a7700eafded3edcb3f86c60133b10e03f8"
+        }
+      ]
+    },
+    {
+      "bom-ref": "eefaed5e88b5a39a",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/certSIGN_Root_CA_G2.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "2ef9f1bb072e0524043c63a27e6ff39da6a6bd32"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "80eee369aa5b29931209226fcb4b014ba31daa7f630d44a196817c1bb6b334f1"
+        }
+      ]
+    },
+    {
+      "bom-ref": "00a82f48ad6607f9",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/e-Szigno_Root_CA_2017.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "0eec6464c1065a3b1e5866580e2fdcd47494c870"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "8c1306d5c64b43ce6c189b8450f27160aaff3f504211ca6819af6035ae1a7d73"
+        }
+      ]
+    },
+    {
+      "bom-ref": "060cd30e9b685225",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/ePKI_Root_Certification_Authority.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "ba48acec12fa6a0e8a29ad8801825c6d0a2b85e9"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "d22b235421616835f68d15801d82b44e7c463433f8bbdcc92f9c023fafcb2bf2"
+        }
+      ]
+    },
+    {
+      "bom-ref": "601ab89002e79d2f",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/emSign_ECC_Root_CA_-_C3.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "cd8b037030f190cb1312b8747f3cd1841586abb2"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "b1d0ac5a261e857409cc921acb515796538b48847722f0a00ddccbf60bccec81"
+        }
+      ]
+    },
+    {
+      "bom-ref": "3b39e3eaf010f946",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/emSign_ECC_Root_CA_-_G3.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "3f5b8aa141a7ca8dae71d86b7074790717ffbe76"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "36e68e205b53c67c7a013894e0d5c8583063468118d1ce78ecbc2200d1dd185c"
+        }
+      ]
+    },
+    {
+      "bom-ref": "1497fc83ccc7307d",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/emSign_Root_CA_-_C1.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "99b8162c32f3ecf05806112baa77ab7230e998d5"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "fb98230f8746d60429c20f8ce04254384337b479a77698939f7041d0c0eb4289"
+        }
+      ]
+    },
+    {
+      "bom-ref": "33c51ce7e4b3b1bb",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/emSign_Root_CA_-_G1.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "6f86ddb585d2f516b028fa21958f09abe463b8cc"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "8d390d4c54f6a4a040b04413f1f002192027c66a2a835741f78a152074584a27"
+        }
+      ]
+    },
+    {
+      "bom-ref": "dd639424bea48820",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/vTrus_ECC_Root_CA.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "05320440f6f2b0315ac23191bc6f7ef427e2f673"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "2ce349e2da9df497cc62aca37b009a2c3261ccdbe06a4c4a063f8105da40eb5d"
+        }
+      ]
+    },
+    {
+      "bom-ref": "6a9639ef7dcbf2ed",
+      "type": "file",
+      "name": "/usr/share/ca-certificates/mozilla/vTrus_Root_CA.crt",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "c9204a1166c493bf25596573a2206d808c5b154f"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "8cc726cf62c554561e89e1237495bea3026b1709ba7153fed3401fcd489b5aaf"
+        }
+      ]
+    },
+    {
+      "bom-ref": "049e2a4e701b7c3c",
+      "type": "file",
+      "name": "/app/hello-melange-apko",
+      "hashes": [
+        {
+          "alg": "SHA-1",
+          "content": "cabe53674a41d52be38bfd08bbab38aaec2710db"
+        },
+        {
+          "alg": "SHA-256",
+          "content": "81d5b06547a62769abc21c57a180d6afc4a7a9647c1981e27a8be420b3e144be"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:apk/alpine/alpine-baselayout@3.7.0-r0?arch=x86_64&distro=alpine-3.22.2&package-id=67451b98a3876cd6",
+      "dependsOn": [
+        "pkg:apk/alpine/alpine-baselayout-data@3.7.0-r0?arch=x86_64&distro=alpine-3.22.2&package-id=314a2c9763b46dff&upstream=alpine-baselayout",
+        "pkg:apk/alpine/busybox-binsh@1.37.0-r19?arch=x86_64&distro=alpine-3.22.2&package-id=73301e3aea81a8df&upstream=busybox"
+      ]
+    },
+    {
+      "ref": "pkg:apk/alpine/alpine-release@3.22.2-r0?arch=x86_64&distro=alpine-3.22.2&package-id=2135bf12eb4f73a9&upstream=alpine-base",
+      "dependsOn": [
+        "pkg:apk/alpine/alpine-keys@2.5-r0?arch=x86_64&distro=alpine-3.22.2&package-id=e6c0f0c8b82e215a"
+      ]
+    },
+    {
+      "ref": "pkg:apk/alpine/apk-tools@2.14.9-r3?arch=x86_64&distro=alpine-3.22.2&package-id=844d16c37f0dbc7e",
+      "dependsOn": [
+        "pkg:apk/alpine/ca-certificates-bundle@20250911-r0?arch=x86_64&distro=alpine-3.22.2&package-id=3b472b2b46e8c22f&upstream=ca-certificates",
+        "pkg:apk/alpine/libapk2@2.14.9-r3?arch=x86_64&distro=alpine-3.22.2&package-id=7d8bbb1a55a55293&upstream=apk-tools",
+        "pkg:apk/alpine/libcrypto3@3.5.4-r0?arch=x86_64&distro=alpine-3.22.2&package-id=bf7144a0fb7fd1d8&upstream=openssl",
+        "pkg:apk/alpine/musl@1.2.5-r10?arch=x86_64&distro=alpine-3.22.2&package-id=f2452ca0a998f0c0",
+        "pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64&distro=alpine-3.22.2&package-id=d03841ef6ae18e18"
+      ]
+    },
+    {
+      "ref": "pkg:apk/alpine/busybox-binsh@1.37.0-r19?arch=x86_64&distro=alpine-3.22.2&package-id=73301e3aea81a8df&upstream=busybox",
+      "dependsOn": [
+        "pkg:apk/alpine/busybox@1.37.0-r19?arch=x86_64&distro=alpine-3.22.2&package-id=d62ad83b542a9e44"
+      ]
+    },
+    {
+      "ref": "pkg:apk/alpine/busybox@1.37.0-r19?arch=x86_64&distro=alpine-3.22.2&package-id=d62ad83b542a9e44",
+      "dependsOn": [
+        "pkg:apk/alpine/musl@1.2.5-r10?arch=x86_64&distro=alpine-3.22.2&package-id=f2452ca0a998f0c0"
+      ]
+    },
+    {
+      "ref": "pkg:apk/alpine/ca-certificates@20250911-r0?arch=x86_64&distro=alpine-3.22.2&package-id=11ba9a777b6e6404",
+      "dependsOn": [
+        "pkg:apk/alpine/busybox-binsh@1.37.0-r19?arch=x86_64&distro=alpine-3.22.2&package-id=73301e3aea81a8df&upstream=busybox",
+        "pkg:apk/alpine/libcrypto3@3.5.4-r0?arch=x86_64&distro=alpine-3.22.2&package-id=bf7144a0fb7fd1d8&upstream=openssl",
+        "pkg:apk/alpine/musl@1.2.5-r10?arch=x86_64&distro=alpine-3.22.2&package-id=f2452ca0a998f0c0"
+      ]
+    },
+    {
+      "ref": "pkg:apk/alpine/libapk2@2.14.9-r3?arch=x86_64&distro=alpine-3.22.2&package-id=7d8bbb1a55a55293&upstream=apk-tools",
+      "dependsOn": [
+        "pkg:apk/alpine/ca-certificates-bundle@20250911-r0?arch=x86_64&distro=alpine-3.22.2&package-id=3b472b2b46e8c22f&upstream=ca-certificates",
+        "pkg:apk/alpine/libcrypto3@3.5.4-r0?arch=x86_64&distro=alpine-3.22.2&package-id=bf7144a0fb7fd1d8&upstream=openssl",
+        "pkg:apk/alpine/libssl3@3.5.4-r0?arch=x86_64&distro=alpine-3.22.2&package-id=84be5059103dde2f&upstream=openssl",
+        "pkg:apk/alpine/musl@1.2.5-r10?arch=x86_64&distro=alpine-3.22.2&package-id=f2452ca0a998f0c0",
+        "pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64&distro=alpine-3.22.2&package-id=d03841ef6ae18e18"
+      ]
+    },
+    {
+      "ref": "pkg:apk/alpine/libcrypto3@3.5.4-r0?arch=x86_64&distro=alpine-3.22.2&package-id=bf7144a0fb7fd1d8&upstream=openssl",
+      "dependsOn": [
+        "pkg:apk/alpine/musl@1.2.5-r10?arch=x86_64&distro=alpine-3.22.2&package-id=f2452ca0a998f0c0"
+      ]
+    },
+    {
+      "ref": "pkg:apk/alpine/libssl3@3.5.4-r0?arch=x86_64&distro=alpine-3.22.2&package-id=84be5059103dde2f&upstream=openssl",
+      "dependsOn": [
+        "pkg:apk/alpine/libcrypto3@3.5.4-r0?arch=x86_64&distro=alpine-3.22.2&package-id=bf7144a0fb7fd1d8&upstream=openssl",
+        "pkg:apk/alpine/musl@1.2.5-r10?arch=x86_64&distro=alpine-3.22.2&package-id=f2452ca0a998f0c0"
+      ]
+    },
+    {
+      "ref": "pkg:apk/alpine/musl-utils@1.2.5-r10?arch=x86_64&distro=alpine-3.22.2&package-id=9a0e8e6d80fb5c12&upstream=musl",
+      "dependsOn": [
+        "pkg:apk/alpine/musl@1.2.5-r10?arch=x86_64&distro=alpine-3.22.2&package-id=f2452ca0a998f0c0",
+        "pkg:apk/alpine/scanelf@1.3.8-r1?arch=x86_64&distro=alpine-3.22.2&package-id=65b930a26ee8f44e&upstream=pax-utils"
+      ]
+    },
+    {
+      "ref": "pkg:apk/alpine/scanelf@1.3.8-r1?arch=x86_64&distro=alpine-3.22.2&package-id=65b930a26ee8f44e&upstream=pax-utils",
+      "dependsOn": [
+        "pkg:apk/alpine/musl@1.2.5-r10?arch=x86_64&distro=alpine-3.22.2&package-id=f2452ca0a998f0c0"
+      ]
+    },
+    {
+      "ref": "pkg:apk/alpine/ssl_client@1.37.0-r19?arch=x86_64&distro=alpine-3.22.2&package-id=ba73ff15639bf9a7&upstream=busybox",
+      "dependsOn": [
+        "pkg:apk/alpine/libcrypto3@3.5.4-r0?arch=x86_64&distro=alpine-3.22.2&package-id=bf7144a0fb7fd1d8&upstream=openssl",
+        "pkg:apk/alpine/libssl3@3.5.4-r0?arch=x86_64&distro=alpine-3.22.2&package-id=84be5059103dde2f&upstream=openssl",
+        "pkg:apk/alpine/musl@1.2.5-r10?arch=x86_64&distro=alpine-3.22.2&package-id=f2452ca0a998f0c0"
+      ]
+    },
+    {
+      "ref": "pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64&distro=alpine-3.22.2&package-id=d03841ef6ae18e18",
+      "dependsOn": [
+        "pkg:apk/alpine/musl@1.2.5-r10?arch=x86_64&distro=alpine-3.22.2&package-id=f2452ca0a998f0c0"
+      ]
+    },
+    {
+      "ref": "pkg:golang/hello-server?package-id=1e3477af25badc6f",
+      "dependsOn": [
+        "pkg:golang/github.com/gin-contrib/sse@v0.1.0?package-id=a237d10d84ba9779",
+        "pkg:golang/github.com/gin-gonic/gin@v1.8.1?package-id=62fdcc50fb246d99",
+        "pkg:golang/github.com/go-playground/locales@v0.14.0?package-id=82fdff73dc1e6a5b",
+        "pkg:golang/github.com/go-playground/universal-translator@v0.18.0?package-id=1209d1cb027b5e6a",
+        "pkg:golang/github.com/go-playground/validator@v10.10.0?package-id=a42460a72cb8af76#v10",
+        "pkg:golang/github.com/leodido/go-urn@v1.2.1?package-id=b17229fa934ca05d",
+        "pkg:golang/github.com/mattn/go-isatty@v0.0.14?package-id=00798b1b0e777356",
+        "pkg:golang/github.com/pelletier/go-toml@v2.0.1?package-id=446ab18cb7617254#v2",
+        "pkg:golang/github.com/ugorji/go@v1.2.7?package-id=1e607c7062294e30#codec",
+        "pkg:golang/golang.org/x/crypto@v0.0.0-20210711020723-a769d52b0f97?package-id=20ac90add01e34df",
+        "pkg:golang/golang.org/x/net@v0.0.0-20210226172049-e18ecbb05110?package-id=9de0d9b40a0fdea8",
+        "pkg:golang/golang.org/x/sys@v0.0.0-20210806184541-e5e7981a1069?package-id=ba4682add5ac0ae9",
+        "pkg:golang/golang.org/x/text@v0.3.6?package-id=03d480a6d04efe7b",
+        "pkg:golang/google.golang.org/protobuf@v1.28.0?package-id=71d0bf0239eea3f2",
+        "pkg:golang/gopkg.in/yaml.v2@v2.4.0?package-id=86dddc5486244017",
+        "pkg:golang/stdlib@1.23.12?package-id=e64ee97d1c991963"
+      ]
+    }
+  ]
+}
