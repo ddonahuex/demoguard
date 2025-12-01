@@ -77,12 +77,12 @@ See referenced Dockerfiles for build details
 ## Deployment
 
 ### minikube
-Minikube in this challenge is started using the **--driver=docker**, which means minikube will create a Docker container that hosts and acts as a single-node K8s cluster. This present a couple of issues that must be addressed if we are to deploy and verify the docker images created in this project.
+Minikube in this challenge is started using the **--driver=docker**, which means minikube will create a Docker container that hosts and acts as a single-node K8s cluster. This presented a couple of issues that must be addressed if we are to deploy and verify the docker images created in this project.
 
 There are two noteworthy issues that need to be addressed to deploy in minikube using the local registry and accessing endpoints. They are both detailed below.
 
 #### Registry Addon Workaround
-As of this write the *registry* addon in minikube is not working. Normally I would store images in Dockerhub, to which this would not be relevant, but the tech challenge calls for using a local registry.
+As of this writing the *registry* addon in minikube is not working. Normally I would store images in Dockerhub, to which this would not be relevant, but the tech challenge calls for using a local registry.
 
 The workaround to use a local registry is to load the image into minikube's containter runtime with the following command.
 
