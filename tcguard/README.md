@@ -18,7 +18,7 @@ That said, learning new things like melange Dockerfile-less builds was enjoyable
 | Docker.single | Single-stage Dockerfile for building hello-melange-apko |
 | Docker.multi | Multi-stage Dockerfile for building hello-melange-apko |
 | Docker.wolfi | Dockerfile for Wolfi-based hello-melange-apko |
-| Makfile | Top-level GNU makefile for all TC builds |
+| Makefile | Top-level GNU makefile for all TC builds |
 | RESULTS.md | TC Results log |
 | sbom | SBOMS for all TC images/artifacts |
 | scan | Grype scan results for all TC images |
