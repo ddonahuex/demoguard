@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: demoguard
-        image: ddonahuex/demoguard:standard  # Image TAG: standard=CVEs, chainguard=0 CVEs
+        image: ddonahuex/demoguard:chainguard  # Image TAG: standard=CVEs, chainguard=0 CVEs
         imagePullPolicy: Always
         resources:
           limits:
